@@ -1,2707 +1,895 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="AdaptivRM" />
-  <meta name="dcterms.date" content="2025-06-28" />
-  <meta name="description" content="Komplett guide för Adaptiv Regim &amp; Momentum-strategin" />
-  <title>AdaptivRM - Komplett Strategiguide</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { color: #008000; } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { color: #008000; font-weight: bold; } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueScore - Weather-Ranked Travel Destinations</title>
+    <meta name="description" content="Find your perfect travel destination based on weather preferences. BlueScore ranks destinations up to 100 points based on how well the forecast matches your ideal weather conditions.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bluescore.app/">
+    <meta property="og:title" content="BlueScore - Weather-Ranked Travel Destinations">
+    <meta property="og:description" content="Find your perfect travel destination based on weather preferences. BlueScore ranks destinations up to 100 points based on how well the forecast matches your ideal weather conditions.">
+    <meta property="og:image" content="https://bluescore.app/images/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bluescore.app/">
+    <meta property="twitter:title" content="BlueScore - Weather-Ranked Travel Destinations">
+    <meta property="twitter:description" content="Find your perfect travel destination based on weather preferences. BlueScore ranks destinations up to 100 points based on how well the forecast matches your ideal weather conditions.">
+    <meta property="twitter:image" content="https://bluescore.app/images/twitter-image.png">
+
+    <style>
+        :root {
+            --primary-blue: #007AFF;
+            --secondary-blue: #5AC8FA;
+            --dark-blue: #0051D5;
+            --light-gray: #F2F2F7;
+            --medium-gray: #8E8E93;
+            --dark-gray: #1C1C1E;
+            --white: #FFFFFF;
+            --gradient: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+        }
+
+        .download-btn {
+            background: var(--gradient);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 122, 255, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #f8faff 0%, #e8f4fd 100%);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--medium-gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-image {
+            margin: 60px 0;
+            position: relative;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-mockup {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero-mockup img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 20px 40px rgba(0, 122, 255, 0.2));
+        }
+
+        .placeholder-image {
+            background: var(--light-gray);
+            border: 2px dashed var(--medium-gray);
+            border-radius: 20px;
+            padding: 60px 20px;
+            color: var(--medium-gray);
+            font-style: italic;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: var(--dark-gray);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+
+        .feature-card p {
+            color: var(--medium-gray);
+            line-height: 1.6;
+        }
+
+        /* How it Works */
+        .how-it-works {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .how-it-works h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: var(--dark-gray);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .step {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 0 auto 20px;
+        }
+
+        .step h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--dark-gray);
+        }
+
+        .step p {
+            color: var(--medium-gray);
+        }
+
+        /* Target Audience */
+        .target-audience {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .target-audience h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: var(--dark-gray);
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .audience-card {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .audience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .audience-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .audience-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 80px 0;
+            background: var(--dark-gray);
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            opacity: 0.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .app-store-btn {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+
+        .app-store-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .app-store-btn img {
+            height: 60px;
+            width: auto;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            background: var(--dark-gray);
+            color: white;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            opacity: 0.6;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: var(--secondary-blue);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* App Icon Section */
+        .app-icon-section {
+            padding: 60px 0;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .app-icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .app-icon-large {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 122, 255, 0.2);
+        }
+
+        .app-info {
+            text-align: left;
+            max-width: 400px;
+        }
+
+        .app-info h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-bottom: 10px;
+        }
+
+        .app-info p {
+            color: var(--medium-gray);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Screenshots Section */
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .screenshot-item {
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 122, 255, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .screenshot-item img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 122, 255, 0.25);
+        }
+
+        /* Languages Section */
+        .languages-section {
+            padding: 60px 0;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .languages-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .languages-container h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-bottom: 30px;
+        }
+
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .language-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 15px 10px;
+            background: var(--light-gray);
+            border-radius: 12px;
+            font-weight: 500;
+            color: var(--dark-gray);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .language-item:hover {
+            transform: translateY(-2px);
+            background: rgba(0, 122, 255, 0.1);
+        }
+
+        .language-flag {
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .screenshots-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero {
+                padding: 140px 0 60px;
+            }
+
+            .app-icon-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .app-info {
+                text-align: center;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .audience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .screenshots-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .languages-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-<header id="title-block-header">
-<h1 class="title">AdaptivRM - Komplett Strategiguide</h1>
-<p class="author">AdaptivRM</p>
-<p class="date">2025-06-28</p>
-</header>
-<nav id="TOC" role="doc-toc">
-<ul>
-<li><a href="#adaptiv-rm---adaptiv-regim-momentum"
-id="toc-adaptiv-rm---adaptiv-regim-momentum"><span
-class="toc-section-number">1</span> Adaptiv RM - Adaptiv Regim &amp;
-Momentum</a>
-<ul>
-<li><a href="#komplett-strategiguide"
-id="toc-komplett-strategiguide"><span
-class="toc-section-number">1.1</span> 📚 KOMPLETT STRATEGIGUIDE</a>
-<ul>
-<li><a href="#vetenskapligt-grundad-systematisk-portföljförvaltning"
-id="toc-vetenskapligt-grundad-systematisk-portföljförvaltning"><span
-class="toc-section-number">1.1.1</span> 📈 <strong>Vetenskapligt grundad
-systematisk portföljförvaltning</strong></a></li>
-</ul></li>
-<li><a href="#innehållsförteckning" id="toc-innehållsförteckning"><span
-class="toc-section-number">1.2</span> 📋 INNEHÅLLSFÖRTECKNING</a>
-<ul>
-<li><a href="#strategi-grund" id="toc-strategi-grund"><span
-class="toc-section-number">1.2.1</span> 🧭 <strong>Strategi &amp;
-Grund</strong></a></li>
-<li><a href="#implementering-teknik"
-id="toc-implementering-teknik"><span
-class="toc-section-number">1.2.2</span> ⚙️ <strong>Implementering &amp;
-Teknik</strong></a></li>
-<li><a href="#risk-kontroll" id="toc-risk-kontroll"><span
-class="toc-section-number">1.2.3</span> 🎛️ <strong>Risk &amp;
-Kontroll</strong></a></li>
-<li><a href="#resultat-validering" id="toc-resultat-validering"><span
-class="toc-section-number">1.2.4</span> 📊 <strong>Resultat &amp;
-Validering</strong></a></li>
-<li><a href="#praktisk-användning" id="toc-praktisk-användning"><span
-class="toc-section-number">1.2.5</span> 🔧 <strong>Praktisk
-användning</strong></a></li>
-<li><a href="#slutsatser-framtid" id="toc-slutsatser-framtid"><span
-class="toc-section-number">1.2.6</span> 📈 <strong>Slutsatser &amp;
-Framtid</strong></a></li>
-</ul></li>
-<li><a href="#fördelar-med-adaptiv-rm-framför-manuell-etf-sortering"
-id="toc-fördelar-med-adaptiv-rm-framför-manuell-etf-sortering"><span
-class="toc-section-number">1.3</span> 🎯 <strong>FÖRDELAR MED ADAPTIV RM
-FRAMFÖR MANUELL ETF-SORTERING</strong></a>
-<ul>
-<li><a href="#systematisk-portföljförvaltning-kontra-manuell-sortering"
-id="toc-systematisk-portföljförvaltning-kontra-manuell-sortering"><span
-class="toc-section-number">1.3.1</span> <strong>Systematisk
-portföljförvaltning kontra manuell sortering</strong></a></li>
-<li><a href="#trendfilter-eliminerar-strukturella-värdefällor"
-id="toc-trendfilter-eliminerar-strukturella-värdefällor"><span
-class="toc-section-number">1.3.2</span> <strong>🛡️ Trendfilter
-eliminerar strukturella värdefällor</strong></a></li>
-<li><a href="#systematisk-beslutsprocess-eliminerar-subjektiva-faktorer"
-id="toc-systematisk-beslutsprocess-eliminerar-subjektiva-faktorer"><span
-class="toc-section-number">1.3.3</span> <strong>🤖 Systematisk
-beslutsprocess eliminerar subjektiva faktorer</strong></a></li>
-<li><a href="#adaptiv-volatilitetsmålstyrning"
-id="toc-adaptiv-volatilitetsmålstyrning"><span
-class="toc-section-number">1.3.4</span> <strong>🎛️ Adaptiv
-volatilitetsmålstyrning</strong></a></li>
-<li><a href="#kvantitativ-regimklassificering"
-id="toc-kvantitativ-regimklassificering"><span
-class="toc-section-number">1.3.5</span> <strong>🧠 Kvantitativ
-regimklassificering</strong></a></li>
-<li><a href="#forskningsvaliderad-metodologi"
-id="toc-forskningsvaliderad-metodologi"><span
-class="toc-section-number">1.3.6</span> <strong>📊 Forskningsvaliderad
-metodologi</strong></a></li>
-<li><a href="#kontinuerlig-marknadsövervakning"
-id="toc-kontinuerlig-marknadsövervakning"><span
-class="toc-section-number">1.3.7</span> <strong>⏱️ Kontinuerlig
-marknadsövervakning</strong></a></li>
-<li><a href="#kvantifierade-prestationsfördelar"
-id="toc-kvantifierade-prestationsfördelar"><span
-class="toc-section-number">1.3.8</span> <strong>📈 Kvantifierade
-prestationsfördelar</strong></a></li>
-<li><a href="#grundläggande-syfte-och-mål"
-id="toc-grundläggande-syfte-och-mål"><span
-class="toc-section-number">1.3.9</span> <strong>1.1 Grundläggande syfte
-och mål</strong></a></li>
-<li><a href="#mekanisk-precision-och-transparens"
-id="toc-mekanisk-precision-och-transparens"><span
-class="toc-section-number">1.3.10</span> <strong>1.2 Mekanisk precision
-och transparens</strong></a></li>
-<li><a href="#adaptiv-intelligens" id="toc-adaptiv-intelligens"><span
-class="toc-section-number">1.3.11</span> <strong>1.3 Adaptiv
-intelligens</strong></a></li>
-<li><a href="#skydd-mot-stora-förluster"
-id="toc-skydd-mot-stora-förluster"><span
-class="toc-section-number">1.3.12</span> <strong>1.4 Skydd mot stora
-förluster</strong></a></li>
-<li><a href="#regimdetektionsteori" id="toc-regimdetektionsteori"><span
-class="toc-section-number">1.3.13</span> <strong>2.1
-Regimdetektionsteori</strong></a></li>
-<li><a href="#trendföljningsteori" id="toc-trendföljningsteori"><span
-class="toc-section-number">1.3.14</span> <strong>2.2
-Trendföljningsteori</strong></a></li>
-<li><a href="#momentumteori-och-relativt-momentum"
-id="toc-momentumteori-och-relativt-momentum"><span
-class="toc-section-number">1.3.15</span> <strong>2.3 Momentumteori och
-relativt momentum</strong></a></li>
-<li><a href="#teoretisk-grund-för-regimdetektion"
-id="toc-teoretisk-grund-för-regimdetektion"><span
-class="toc-section-number">1.3.16</span> <strong>3.1 Teoretisk grund för
-regimdetektion</strong></a></li>
-<li><a href="#praktisk-implementering-av-regimdetektion-1"
-id="toc-praktisk-implementering-av-regimdetektion-1"><span
-class="toc-section-number">1.3.17</span> <strong>3.2 Praktisk
-implementering av regimdetektion</strong></a></li>
-<li><a href="#regimspecifika-strategiinställningar"
-id="toc-regimspecifika-strategiinställningar"><span
-class="toc-section-number">1.3.18</span> <strong>3.3 Regimspecifika
-strategiinställningar</strong></a></li>
-<li><a href="#regimövergångar-och-stabilisering"
-id="toc-regimövergångar-och-stabilisering"><span
-class="toc-section-number">1.3.19</span> <strong>3.4 Regimövergångar och
-stabilisering</strong></a></li>
-<li><a href="#trendfilter-implementering"
-id="toc-trendfilter-implementering"><span
-class="toc-section-number">1.3.20</span> <strong>4.1 Trendfilter
-implementering</strong></a></li>
-<li><a href="#momentum-beräkning-och-rangordning"
-id="toc-momentum-beräkning-och-rangordning"><span
-class="toc-section-number">1.3.21</span> <strong>4.2 Momentum-beräkning
-och rangordning</strong></a></li>
-<li><a href="#teknisk-validering-och-kvalitetssäkring"
-id="toc-teknisk-validering-och-kvalitetssäkring"><span
-class="toc-section-number">1.3.22</span> <strong>4.3 Teknisk validering
-och kvalitetssäkring</strong></a></li>
-<li><a href="#prestationsoptimering"
-id="toc-prestationsoptimering"><span
-class="toc-section-number">1.3.23</span> <strong>4.4
-Prestationsoptimering</strong></a></li>
-<li><a href="#designkriterier-för-etf-universum"
-id="toc-designkriterier-för-etf-universum"><span
-class="toc-section-number">1.3.24</span> <strong>5.1 Designkriterier för
-ETF-universum</strong></a></li>
-<li><a href="#specificerat-etf-universum"
-id="toc-specificerat-etf-universum"><span
-class="toc-section-number">1.3.25</span> <strong>5.2 Specificerat
-ETF-universum</strong></a></li>
-<li><a href="#universum-dynamik-och-regimspecifik-användning"
-id="toc-universum-dynamik-och-regimspecifik-användning"><span
-class="toc-section-number">1.3.26</span> <strong>5.3 Universum-dynamik
-och regimspecifik användning</strong></a></li>
-<li><a href="#universum-utveckling-och-anpassning"
-id="toc-universum-utveckling-och-anpassning"><span
-class="toc-section-number">1.3.27</span> <strong>5.4
-Universum-utveckling och anpassning</strong></a></li>
-<li><a href="#daglig-dataprocess-steg-1-3"
-id="toc-daglig-dataprocess-steg-1-3"><span
-class="toc-section-number">1.3.28</span> <strong>6.1 Daglig dataprocess
-(Steg 1-3)</strong></a></li>
-<li><a href="#indikatorberäkning-steg-4-6"
-id="toc-indikatorberäkning-steg-4-6"><span
-class="toc-section-number">1.3.29</span> <strong>6.2 Indikatorberäkning
-(Steg 4-6)</strong></a></li>
-<li><a href="#rebalansering-och-implementering-steg-7-9"
-id="toc-rebalansering-och-implementering-steg-7-9"><span
-class="toc-section-number">1.3.30</span> <strong>6.3 Rebalansering och
-implementering (Steg 7-9)</strong></a></li>
-<li><a href="#adaptiva-inställningar"
-id="toc-adaptiva-inställningar"><span
-class="toc-section-number">1.3.31</span> <strong>7.1 Adaptiva
-inställningar</strong></a></li>
-<li><a href="#portföljsammansättning"
-id="toc-portföljsammansättning"><span
-class="toc-section-number">1.3.32</span> <strong>7.2
-Portföljsammansättning</strong></a></li>
-<li><a href="#rebalanseringsfrekvens"
-id="toc-rebalanseringsfrekvens"><span
-class="toc-section-number">1.3.33</span> <strong>7.3
-Rebalanseringsfrekvens</strong></a></li>
-<li><a href="#volatilitetsmålstyrning-parametrar"
-id="toc-volatilitetsmålstyrning-parametrar"><span
-class="toc-section-number">1.3.34</span> <strong>7.4
-Volatilitetsmålstyrning-parametrar</strong></a></li>
-<li><a href="#teoretisk-grund-för-volatilitetsmålstyrning"
-id="toc-teoretisk-grund-för-volatilitetsmålstyrning"><span
-class="toc-section-number">1.3.35</span> <strong>8.1 Teoretisk grund för
-volatilitetsmålstyrning</strong></a></li>
-<li><a href="#matematisk-implementering"
-id="toc-matematisk-implementering"><span
-class="toc-section-number">1.3.36</span> <strong>8.2 Matematisk
-implementering</strong></a></li>
-<li><a href="#konfiguration-och-användarinterface"
-id="toc-konfiguration-och-användarinterface"><span
-class="toc-section-number">1.3.37</span> <strong>8.3 Konfiguration och
-användarinterface</strong></a></li>
-<li><a href="#ui-presentation-och-feedback"
-id="toc-ui-presentation-och-feedback"><span
-class="toc-section-number">1.3.38</span> <strong>8.4 UI-presentation och
-feedback</strong></a></li>
-<li><a href="#risk-benefits-analys" id="toc-risk-benefits-analys"><span
-class="toc-section-number">1.3.39</span> <strong>8.5 Risk-benefits
-analys</strong></a></li>
-<li><a href="#profil-a-maximum-momentum-aggressiv"
-id="toc-profil-a-maximum-momentum-aggressiv"><span
-class="toc-section-number">1.3.40</span> <strong>9.1 Profil A: “Maximum
-Momentum” (Aggressiv)</strong></a></li>
-<li><a href="#profil-b-balanced-growth-balanserad"
-id="toc-profil-b-balanced-growth-balanserad"><span
-class="toc-section-number">1.3.41</span> <strong>9.2 Profil B: “Balanced
-Growth” (Balanserad)</strong></a></li>
-<li><a href="#profil-c-conservative-income-konservativ"
-id="toc-profil-c-conservative-income-konservativ"><span
-class="toc-section-number">1.3.42</span> <strong>9.3 Profil C:
-“Conservative Income” (Konservativ)</strong></a></li>
-<li><a href="#profiljämförelse" id="toc-profiljämförelse"><span
-class="toc-section-number">1.3.43</span> <strong>9.4
-Profiljämförelse</strong></a></li>
-<li><a href="#profilval-och-anpassning"
-id="toc-profilval-och-anpassning"><span
-class="toc-section-number">1.3.44</span> <strong>9.5 Profilval och
-anpassning</strong></a></li>
-<li><a href="#akademiska-studieresultat-för-liknande-strategier"
-id="toc-akademiska-studieresultat-för-liknande-strategier"><span
-class="toc-section-number">1.3.45</span> <strong>10.1 Akademiska
-studieresultat för liknande strategier</strong></a></li>
-<li><a href="#teoretiska-uppskattningar-för-adaptiv-rm-implementering"
-id="toc-teoretiska-uppskattningar-för-adaptiv-rm-implementering"><span
-class="toc-section-number">1.3.46</span> <strong>10.2 Teoretiska
-uppskattningar för Adaptiv RM-implementering</strong></a></li>
-<li><a href="#planerad-utveckling-för-faktisk-validering"
-id="toc-planerad-utveckling-för-faktisk-validering"><span
-class="toc-section-number">1.3.47</span> <strong>10.3 Planerad
-utveckling för faktisk validering</strong></a></li>
-<li><a href="#momentum-forskning-och-empirisk-grund"
-id="toc-momentum-forskning-och-empirisk-grund"><span
-class="toc-section-number">1.3.48</span> <strong>11.1 Momentum-forskning
-och empirisk grund</strong></a></li>
-<li><a href="#volatilitet-och-riskskalning"
-id="toc-volatilitet-och-riskskalning"><span
-class="toc-section-number">1.3.49</span> <strong>11.2 Volatilitet och
-riskskalning</strong></a></li>
-<li><a href="#grundläggande-prestationsmått"
-id="toc-grundläggande-prestationsmått"><span
-class="toc-section-number">1.3.50</span> <strong>12.1 Grundläggande
-prestationsmått</strong></a></li>
-<li><a href="#svansrisk-och-extrema-scenariomått"
-id="toc-svansrisk-och-extrema-scenariomått"><span
-class="toc-section-number">1.3.51</span> <strong>12.2 Svansrisk och
-extrema scenariomått</strong></a></li>
-<li><a href="#primär-och-sekundär-datakällor"
-id="toc-primär-och-sekundär-datakällor"><span
-class="toc-section-number">1.3.52</span> <strong>13.1 Primär och
-sekundär datakällor</strong></a></li>
-<li><a href="#kärnfunktioner-som-är-fullt-implementerade"
-id="toc-kärnfunktioner-som-är-fullt-implementerade"><span
-class="toc-section-number">1.3.53</span> <strong>14.1 Kärnfunktioner som
-är fullt implementerade</strong></a></li>
-<li><a href="#datahämtning-och-presentation"
-id="toc-datahämtning-och-presentation"><span
-class="toc-section-number">1.3.54</span> <strong>14.2 Datahämtning och
-presentation</strong></a></li>
-<li><a href="#funktioner-som-inte-är-implementerade-än"
-id="toc-funktioner-som-inte-är-implementerade-än"><span
-class="toc-section-number">1.3.55</span> <strong>14.3 Funktioner som
-INTE är implementerade än</strong></a></li>
-<li><a href="#hur-appen-används-i-praktiken"
-id="toc-hur-appen-används-i-praktiken"><span
-class="toc-section-number">1.3.56</span> <strong>14.4 Hur appen används
-i praktiken</strong></a></li>
-<li><a href="#initial-installation-och-konfiguration"
-id="toc-initial-installation-och-konfiguration"><span
-class="toc-section-number">1.3.57</span> <strong>14.1 Initial
-installation och konfiguration</strong></a></li>
-<li><a href="#löpande-operativ-förvaltning"
-id="toc-löpande-operativ-förvaltning"><span
-class="toc-section-number">1.3.58</span> <strong>14.2 Löpande operativ
-förvaltning</strong></a></li>
-<li><a href="#grundläggande-strategifrågor"
-id="toc-grundläggande-strategifrågor"><span
-class="toc-section-number">1.3.59</span> <strong>15.1 Grundläggande
-strategifrågor</strong></a></li>
-<li><a href="#praktiska-implementeringsfrågor"
-id="toc-praktiska-implementeringsfrågor"><span
-class="toc-section-number">1.3.60</span> <strong>15.2 Praktiska
-implementeringsfrågor</strong></a></li>
-<li><a href="#strategins-kärnvärden"
-id="toc-strategins-kärnvärden"><span
-class="toc-section-number">1.3.61</span> <strong>16.1 Strategins
-kärnvärden</strong></a></li>
-<li><a href="#implementeringsrekommendationer"
-id="toc-implementeringsrekommendationer"><span
-class="toc-section-number">1.3.62</span> <strong>16.2
-Implementeringsrekommendationer</strong></a></li>
-<li><a href="#slutord" id="toc-slutord"><span
-class="toc-section-number">1.3.63</span> <strong>16.3
-Slutord</strong></a></li>
-<li><a href="#version-2.0---automatisering-och-backtesting"
-id="toc-version-2.0---automatisering-och-backtesting"><span
-class="toc-section-number">1.3.64</span> <strong>17.1 Version 2.0 -
-Automatisering och Backtesting</strong></a></li>
-<li><a href="#medellånga-förbättringar-version-3.0"
-id="toc-medellånga-förbättringar-version-3.0"><span
-class="toc-section-number">1.3.65</span> <strong>17.2 Medellånga
-förbättringar (Version 3.0)</strong></a></li>
-<li><a href="#långsiktiga-förbättringar-version-4.0"
-id="toc-långsiktiga-förbättringar-version-4.0"><span
-class="toc-section-number">1.3.66</span> <strong>17.3 Långsiktiga
-förbättringar (Version 4.0+)</strong></a></li>
-<li><a href="#implementeringstidplan"
-id="toc-implementeringstidplan"><span
-class="toc-section-number">1.3.67</span> <strong>17.4
-Implementeringstidplan</strong></a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-<h1 data-number="1" id="adaptiv-rm---adaptiv-regim-momentum"><span
-class="header-section-number">1</span> Adaptiv RM - Adaptiv Regim &amp;
-Momentum</h1>
-<h2 data-number="1.1" id="komplett-strategiguide"><span
-class="header-section-number">1.1</span> 📚 KOMPLETT STRATEGIGUIDE</h2>
-<p><a href="https://developer.apple.com/ios/"><img
-src="https://img.shields.io/badge/iOS-15.0+-007AFF.svg?style=flat&amp;logo=apple&amp;logoColor=white"
-alt="iOS" /></a> <a href="https://swift.org/"><img
-src="https://img.shields.io/badge/Swift-5.7+-FA7343.svg?style=flat&amp;logo=swift&amp;logoColor=white"
-alt="Swift" /></a> <a
-href="https://developer.apple.com/xcode/swiftui/"><img
-src="https://img.shields.io/badge/SwiftUI-✓-blue.svg?style=flat&amp;logo=swift&amp;logoColor=white"
-alt="SwiftUI" /></a> <a href="LICENSE"><img
-src="https://img.shields.io/badge/License-Private-red.svg?style=flat"
-alt="License" /></a> <a href="docs/guide.md"><img
-src="https://img.shields.io/badge/Strategy-Momentum-blue.svg?style=flat"
-alt="Strategy" /></a> <a href="docs/guide.md"><img
-src="https://img.shields.io/badge/Regime-Adaptive-orange.svg?style=flat"
-alt="Regime" /></a></p>
-<h3 data-number="1.1.1"
-id="vetenskapligt-grundad-systematisk-portföljförvaltning"><span
-class="header-section-number">1.1.1</span> 📈 <strong>Vetenskapligt
-grundad systematisk portföljförvaltning</strong></h3>
-<p><strong>Denna guide innehåller den kompletta dokumentationen för
-Adaptiv Regim &amp; Momentum-strategin</strong> - en metod till
-systematisk investering som kombinerar beprövade tekniska principer med
-modern adaptiv teknik för navigation mellan olika marknadsregimer och
-optimal portföljsammansättning.</p>
-<h4 data-number="1.1.1.1" id="vad-du-hittar-i-denna-guide"><span
-class="header-section-number">1.1.1.1</span> 🎯 <strong>Vad du hittar i
-denna guide:</strong></h4>
-<ul>
-<li><strong>🧠 Komplett teoretisk grund</strong> med akademisk
-forskningsvalidering</li>
-<li><strong>🔍 Detaljerad regimdetektion</strong> och
-marknadsklassificering</li>
-<li><strong>📊 Matematiska formler</strong> och algoritmer för alla
-beräkningar</li>
-<li><strong>⚙️ Fullständig konfiguration</strong> av alla
-strategiparametrar</li>
-<li><strong>🧪 Forskningsvalidering</strong> och akademiska referenser
-för liknande strategier</li>
-<li><strong>🛡️ Grundläggande riskhantering</strong> och
-säkerhetsmekanismer</li>
-<li><strong>🚀 Utvecklingsroadmap</strong> för framtida
-förbättringar</li>
-</ul>
-<blockquote>
-<p><strong>⚠️ VIKTIGT:</strong> Denna version (1.0) fokuserar på
-<strong>manuell strategiimplementering</strong>. Automatisk
-rebalansering och backtesting kommer i framtida versioner.</p>
-</blockquote>
-<blockquote>
-<p><strong>💡 Detta är den tekniska referensdokumentationen.</strong>
-För appöversikt och installation, se <a
-href="../README.md">README.md</a></p>
-</blockquote>
-<hr />
-<h2 data-number="1.2" id="innehållsförteckning"><span
-class="header-section-number">1.2</span> 📋 INNEHÅLLSFÖRTECKNING</h2>
-<h3 data-number="1.2.1" id="strategi-grund"><span
-class="header-section-number">1.2.1</span> 🧭 <strong>Strategi &amp;
-Grund</strong></h3>
-<ol type="1">
-<li><a href="#strategiöversikt">📈 <strong>STRATEGIÖVERSIKT</strong></a>
-- Syfte, mål och kärnprinciper</li>
-<li><a href="#teoretisk-grund">🧠 <strong>TEORETISK GRUND</strong></a> -
-Akademisk forskning och vetenskaplig validering</li>
-<li><a href="#regimdetektion">🔍 <strong>REGIMDETEKTION</strong></a> -
-Marknadsklassificering och adaptiva algoritmer</li>
-</ol>
-<h3 data-number="1.2.2" id="implementering-teknik"><span
-class="header-section-number">1.2.2</span> ⚙️ <strong>Implementering
-&amp; Teknik</strong></h3>
-<ol start="4" type="1">
-<li><a href="#teknisk-implementering">⚙️ <strong>TEKNISK
-IMPLEMENTERING</strong></a> - Systemarkitektur och algoritmer</li>
-<li><a href="#etf-universum">📊 <strong>ETF-UNIVERSUM</strong></a> -
-Tillgångsval och diversifiering</li>
-<li><a href="#beräkningsprocess">🔢
-<strong>BERÄKNINGSPROCESS</strong></a> - Steg-för-steg
-implementering</li>
-</ol>
-<h3 data-number="1.2.3" id="risk-kontroll"><span
-class="header-section-number">1.2.3</span> 🎛️ <strong>Risk &amp;
-Kontroll</strong></h3>
-<ol start="7" type="1">
-<li><a href="#konfiguration">🎛️ <strong>KONFIGURATION</strong></a> -
-Parameterinställningar och anpassning</li>
-<li><a href="#volatilitetsmålstyrning">🌡️
-<strong>VOLATILITETSMÅLSTYRNING</strong></a> - Riskskalning och
-exponering</li>
-<li><a href="#konfigurationsprofiler">👤
-<strong>KONFIGURATIONSPROFILER</strong></a> - Fördefinierade
-strategivariantar</li>
-</ol>
-<h3 data-number="1.2.4" id="resultat-validering"><span
-class="header-section-number">1.2.4</span> 📊 <strong>Resultat &amp;
-Validering</strong></h3>
-<ol start="10" type="1">
-<li><a href="#teoretiska-förväntningar">📊 <strong>TEORETISKA
-FÖRVÄNTNINGAR</strong></a> - Akademiska studier och
-forskningsvalidering</li>
-<li><a href="#akademisk-forskning">📚 <strong>AKADEMISK
-FORSKNING</strong></a> - Forskningsreferenser och validering</li>
-<li><a href="#riskmått">🛡️ <strong>RISKMÅTT</strong></a> - Grundläggande
-prestations- och riskindikatorer</li>
-</ol>
-<h3 data-number="1.2.5" id="praktisk-användning"><span
-class="header-section-number">1.2.5</span> 🔧 <strong>Praktisk
-användning</strong></h3>
-<ol start="13" type="1">
-<li><a href="#datakällor">💾 <strong>DATAKÄLLOR</strong></a> - API:er
-och datainfrastruktur</li>
-<li><a href="#appfunktioner">📱 <strong>APPFUNKTIONER</strong></a> -
-Faktiska funktioner i version 1.0</li>
-<li><a href="#implementering">🔧 <strong>IMPLEMENTERING</strong></a> -
-Praktisk vägledning och installation</li>
-<li><a href="#vanliga-frågor">❓ <strong>VANLIGA FRÅGOR</strong></a> -
-Svar på vanliga frågor</li>
-</ol>
-<h3 data-number="1.2.6" id="slutsatser-framtid"><span
-class="header-section-number">1.2.6</span> 📈 <strong>Slutsatser &amp;
-Framtid</strong></h3>
-<ol start="17" type="1">
-<li><a href="#slutsatser">📋 <strong>SLUTSATSER</strong></a> -
-Sammanfattning och rekommendationer</li>
-<li><a href="#utvecklingsroadmap">🚀
-<strong>UTVECKLINGSROADMAP</strong></a> - Framtida förbättringar och
-funktioner</li>
-</ol>
-<hr />
-<h2 data-number="1.3"
-id="fördelar-med-adaptiv-rm-framför-manuell-etf-sortering"><span
-class="header-section-number">1.3</span> 🎯 <strong>FÖRDELAR MED ADAPTIV
-RM FRAMFÖR MANUELL ETF-SORTERING</strong></h2>
-<h3 data-number="1.3.1"
-id="systematisk-portföljförvaltning-kontra-manuell-sortering"><span
-class="header-section-number">1.3.1</span> <strong>Systematisk
-portföljförvaltning kontra manuell sortering</strong></h3>
-<p>Manuell sortering av ETF:er efter kursutveckling representerar en av
-de vanligaste frågorna inom systematiska investeringsstrategier. Medan
-sådan sortering är tekniskt genomförbar, erbjuder Adaptiv RM-metoden
-avgörande fördelar som systematiskt förbättrar riskjusterad
-avkastning.</p>
-<h3 data-number="1.3.2"
-id="trendfilter-eliminerar-strukturella-värdefällor"><span
-class="header-section-number">1.3.2</span> <strong>🛡️ Trendfilter
-eliminerar strukturella värdefällor</strong></h3>
-<p><strong>Begränsningar i ren momentum-sortering:</strong> - ETF:er kan
-uppvisa stark tremånadersutveckling (+15%) samtidigt som de befinner sig
-i strukturell nedgång - Handel under glidande medelvärde indikerar
-teknisk svaghet trots kortsiktigt momentum - Högt momentum kan
-representera slutfasen innan strukturell kollaps - Investering i
-tekniskt svaga positioner (“falling knives”) utan objektiv
-validering</p>
-<p><strong>Strategins systematiska metodologi:</strong> - Automatiserad
-filtrering av tillgångar under sina trendlinjer enligt fördefinierade
-kriterier - Investering endast i ETF:er med både momentum och bekräftad
-uppåtgående trend - Integration av MA100/MA200-filter med momentum för
-dubbelvalidering - Historisk reducering av förlustpositioner med 30-50%
-jämfört med ren momentum-sortering</p>
-<h3 data-number="1.3.3"
-id="systematisk-beslutsprocess-eliminerar-subjektiva-faktorer"><span
-class="header-section-number">1.3.3</span> <strong>🤖 Systematisk
-beslutsprocess eliminerar subjektiva faktorer</strong></h3>
-<p><strong>Begränsningar i manuell övervakning:</strong> - Inkonsekvent
-övervakning och periodisk negligering av portföljförändringar -
-Emotionella beslut under marknadsvolatilitet med suboptimal timing -
-Systematiska kognitiva bias: köp vid toppar, försäljning vid bottnar -
-Variabel rebalanseringsfrekvens beroende på psykologiska faktorer</p>
-<p><strong>Strategins systematiska metodologi:</strong> - Matematiskt
-objektiva beslutskriterier utan emotionella faktorer - Tillämpning
-enligt fördefinierade algoritmer oberoende av marknadssentiment -
-Automatiserad rebalansering enligt vetenskapligt optimerade scheman -
-Eliminering av “analysis paralysis” och prokrastination genom
-systematisk process</p>
-<h3 data-number="1.3.4" id="adaptiv-volatilitetsmålstyrning"><span
-class="header-section-number">1.3.4</span> <strong>🎛️ Adaptiv
-volatilitetsmålstyrning</strong></h3>
-<p><strong>Begränsningar i statisk allokering:</strong> - Konstant
-exponering oberoende av marknadsvolatilitet (VIX 12 kontra VIX 35) -
-Överexponering under volatila marknadsförhållanden med förhöjd risk -
-Underexponering under stabila perioder med suboptimal
-avkastningspotential - Avsaknad av anpassning till portföljens faktiska
-volatilitetsegenskaper</p>
-<p><strong>Strategins systematiska metodologi:</strong> - Automatiserad
-volatilitetsmålstyrning baserat på portföljens realiserade volatilitet -
-Alpha-skalning: minskning av exponering under volatila perioder -
-Exponeringsökning under stabila marknadsförhållanden - Konfigurerbar
-målvolatilitet 5-20% enligt individuell risktolerans</p>
-<h3 data-number="1.3.5" id="kvantitativ-regimklassificering"><span
-class="header-section-number">1.3.5</span> <strong>🧠 Kvantitativ
-regimklassificering</strong></h3>
-<p><strong>Begränsningar i statiska parametrar:</strong> - Identiska
-strategiparametrar oberoende av marknadsregim (bull-marknader med VIX 12
-kontra bear-marknader med VIX 35) - Suboptimal utnyttjande av
-möjligheter under olika marknadsförhållanden - Överexponering under
-riskfyllda perioder med förhöjd nedgångsrisk - Underexponering under
-gynnsamma perioder med begränsad avkastningspotential</p>
-<p><strong>Strategins systematiska metodologi:</strong> - Bull-regim:
-Aggressiva parametrar (MA100, Top 2, lika viktning) - Bear-regim:
-Defensiva inställningar (MA200, konservativa tillgångar,
-volatilitetsjustering) - Turbulent regim: Balanserade parametrar (MA200,
-Top 3, volatilitetsjustering) - Automatiserad regimklassificering
-baserat på globalt index och volatilitetsmått</p>
-<h3 data-number="1.3.6" id="forskningsvaliderad-metodologi"><span
-class="header-section-number">1.3.6</span> <strong>📊
-Forskningsvaliderad metodologi</strong></h3>
-<p><strong>Begränsningar i intuitionsbaserade beslut:</strong> -
-Subjektiva bedömningar avseende viktningsmetoder (lika viktning kontra
-volatilitetsjustering) - Arbiträr rebalanseringsfrekvens utan
-vetenskaplig grund (veckovis, månatlig, kvartalsvis) - Suboptimala
-momentum-perioder utan empirisk validering (1, 3 eller 6 månader) -
-Godtyckligt antal tillgångar utan kvantitativ optimering (2, 3, 5 eller
-10 ETF:er)</p>
-<p><strong>Strategins systematiska metodologi:</strong> - Tillämpning
-enligt etablerad akademisk forskning (Ang &amp; Bekaert, Gray &amp;
-Vogel) - Regimspecifika parametrar baserade på empirisk optimering -
-Volatilitetsjusterad viktning enligt Kelly Criterion-principer -
-Adaptiva momentum-perioder enligt marknadsregim (3M bull-regim, 1M
-bear-regim)</p>
-<h3 data-number="1.3.7" id="kontinuerlig-marknadsövervakning"><span
-class="header-section-number">1.3.7</span> <strong>⏱️ Kontinuerlig
-marknadsövervakning</strong></h3>
-<p><strong>Begränsningar i periodisk övervakning:</strong> - Försenade
-reaktioner på kritiska regimskiften mellan manuella kontroller -
-Inkonsekvent timing av transaktionsbeslut med suboptimal execution -
-Försenad tillämpning av marknadsförändringar med negativ påverkan på
-avkastning - Psykologisk stress och osäkerhet avseende
-portföljstatus</p>
-<p><strong>Strategins systematiska metodologi:</strong> - Kontinuerlig
-dataövervakning via professionella API:er (Marketstack) - Automatiserad
-rebalansering enligt vetenskapligt optimerade scheman - Omedelbar
-reaktion på regimskiften och trendbrott enligt fördefinierade kriterier
-- Komplett transparens genom systematisk loggning av alla beslut och
-förändringar</p>
-<h3 data-number="1.3.8" id="kvantifierade-prestationsfördelar"><span
-class="header-section-number">1.3.8</span> <strong>📈 Kvantifierade
-prestationsfördelar</strong></h3>
-<p><strong>Empirisk validering visar att systematiska
-momentum-strategier med trendfilter historiskt uppvisar:</strong> -
-<strong>15-40% förhöjda Sharpe-kvoter</strong> jämfört med
-buy-and-hold-strategier - <strong>30-50% reducerade maximala
-nedgångar</strong> kontra passiva strategier - <strong>20-35% färre
-falsklarm</strong> jämfört med statiska tekniska indikatorer -
-<strong>Konsekvent överavkastning</strong> över olika
-marknadsregimer</p>
-<p><strong>Slutsats:</strong> Systematisk portföljförvaltning enligt
-Adaptiv RM-metoden erbjuder vetenskapligt grundad optimering av
-riskjusterad avkastning genom automatisk anpassning till
-marknadsförhållanden och eliminering av subjektiva bedömningar.</p>
-<hr />
-<p><a name="strategiöversikt"></a> ## 📈
-<strong>STRATEGIÖVERSIKT</strong></p>
-<p>Adaptiv Regim &amp; Momentum representerar en ny generation av
-systematisk portföljförvaltning som kombinerar beprövade tekniska
-principer med modern adaptiv teknik. Strategin är byggd för att
-automatiskt navigera mellan olika marknadsregimer och optimera
-portföljsammansättningen baserat på rådande marknadsförhållanden.</p>
-<h3 data-number="1.3.9" id="grundläggande-syfte-och-mål"><span
-class="header-section-number">1.3.9</span> <strong>1.1 Grundläggande
-syfte och mål</strong></h3>
-<h4 data-number="1.3.9.1"
-id="maximera-långsiktig-avkastning-vid-kontrollerad-risk"><span
-class="header-section-number">1.3.9.1</span> <strong>Maximera långsiktig
-avkastning vid kontrollerad risk</strong></h4>
-<p>Historiskt har aktiemarknaderna levererat stark avkastning över långa
-tidshorisonter, men denna resa kännetecknas av betydande volatilitet och
-periodvisa stora nedgångar. Adaptiv Regim &amp; Momentum är designad för
-att:</p>
-<ul>
-<li>✅ Aktivt följa starka uppåtgående marknadsrörelser</li>
-<li>✅ Automatiskt minska exponering under nedgångsperioder<br />
-</li>
-<li>✅ Optimera risknivån efter marknadens volatilitetsprofil</li>
-<li>✅ Bibehålla transparent och repeterbar arbetsprocess</li>
-</ul>
-<h4 data-number="1.3.9.2"
-id="kombinera-det-bästa-från-flera-investeringsfilosofier"><span
-class="header-section-number">1.3.9.2</span> Kombinera det bästa från
-flera investeringsfilosofier</h4>
-<p>Strategin integrerar flera beprövade investeringsansatser:</p>
-<table>
-<colgroup>
-<col style="width: 43%" />
-<col style="width: 56%" />
-</colgroup>
-<thead>
-<tr>
-<th>Filosofi</th>
-<th>Beskrivning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>🎯 Trendföljning</strong></td>
-<td>Investera endast i tillgångar som visar bekräftad uppåtgående
-prisrörelse</td>
-</tr>
-<tr>
-<td><strong>🚀 Momentum</strong></td>
-<td>Prioritera tillgångar med starkast relativ utveckling</td>
-</tr>
-<tr>
-<td><strong>🔍 Regimklassificering</strong></td>
-<td>Anpassa aggressivitet efter marknadsläge</td>
-</tr>
-<tr>
-<td><strong>⚖️ Riskskalning</strong></td>
-<td>Justera total exponering efter volatilitet</td>
-</tr>
-</tbody>
-</table>
-<h3 data-number="1.3.10" id="mekanisk-precision-och-transparens"><span
-class="header-section-number">1.3.10</span> <strong>1.2 Mekanisk
-precision och transparens</strong></h3>
-<h4 data-number="1.3.10.1" id="eliminera-känslostyrda-beslut"><span
-class="header-section-number">1.3.10.1</span> <strong>Eliminera
-känslostyrda beslut</strong></h4>
-<p>All logik i strategin bygger på objektiva, kvantifierbara indikatorer
-utan utrymme för subjektiv tolkning. Varje köp-, sälj- och
-viktningsbeslut följer fördefinierade matematiska regler som kan
-verifieras och upprepas. Detta innebär att:</p>
-<ul>
-<li>🔍 Du alltid vet exakt varför portföljen ser ut som den gör</li>
-<li>📊 Historiska resultat kan analyseras och förstås i detalj<br />
-</li>
-<li>🎯 Framtida beslut är förutsägbara och logiska</li>
-<li>🛡️ Strategin är immun mot marknadspsykologi och sentiment</li>
-</ul>
-<h4 data-number="1.3.10.2"
-id="fullständig-regelbok-för-alla-scenarion"><span
-class="header-section-number">1.3.10.2</span> <strong>Fullständig
-regelbok för alla scenarion</strong></h4>
-<p>Strategin fungerar som en komplett “receptbok” som specificerar exakt
-vilka åtgärder som ska vidtas under alla möjliga marknadsförhållanden.
-Ingen gissning eller känslobaserade beslut krävs – systemet hanterar
-allt från lugna bull-marknader till volatila krascher enligt
-förutbestämda protokoll.</p>
-<h3 data-number="1.3.11" id="adaptiv-intelligens"><span
-class="header-section-number">1.3.11</span> <strong>1.3 Adaptiv
-intelligens</strong></h3>
-<h4 data-number="1.3.11.1"
-id="automatisk-anpassning-efter-marknadsregim"><span
-class="header-section-number">1.3.11.1</span> <strong>Automatisk
-anpassning efter marknadsregim</strong></h4>
-<p>Till skillnad från statiska strategier som använder samma parametrar
-oavsett marknadsläge, anpassar sig Adaptiv Regim &amp; Momentum
-kontinuerligt: - Bull-marknader: Aggressivare parametrar för att
-maximera deltagande i uppgångar - Bear-marknader: Defensiva
-inställningar för kapitalbevarande<br />
-- Sidledes marknader: Balanserade parametrar som minimerar falsklarm</p>
-<h4 data-number="1.3.11.2"
-id="skalbar-komplexitet-enligt-användarens-preferenser"><span
-class="header-section-number">1.3.11.2</span> <strong>Skalbar
-komplexitet enligt användarens preferenser</strong></h4>
-<p>Du kan välja mellan olika komplexitetsnivåer: - Enkel version: Fasta
-parametrar för “set-and-forget”-användning - Adaptiv version: Automatisk
-parameteromställning baserad på marknadsdata - Avancerad version: Full
-kontroll över alla variabler och tröskelvärden</p>
-<h3 data-number="1.3.12" id="skydd-mot-stora-förluster"><span
-class="header-section-number">1.3.12</span> <strong>1.4 Skydd mot stora
-förluster</strong></h3>
-<h4 data-number="1.3.12.1" id="systematisk-riskreduktion"><span
-class="header-section-number">1.3.12.1</span> <strong>Systematisk
-riskreduktion</strong></h4>
-<p>Många investerare tenderar att behålla exponering även när marknaden
-signalerar svaghet. Genom att kombinera trendfilter med momentumrankning
-säkerställer strategin att endast kapital som uppvisar bekräftad styrka
-förblir investerat. När tekniska indikatorer signalerar svaghet sker
-automatisk avyttring, vilket historiskt har reducerat maximala nedgångar
-med 30-50% jämfört med passiva strategier.</p>
-<h4 data-number="1.3.12.2"
-id="proaktiv-i-stället-för-reaktiv-riskhantering"><span
-class="header-section-number">1.3.12.2</span> <strong>Proaktiv i stället
-för reaktiv riskhantering</strong></h4>
-<p>Traditionell portföljförvaltning reagerar ofta för sent på
-marknadsförändringar. Adaptiv Regim &amp; Momentum använder leading
-indicators för att anticipera regimskiften innan de får full effekt,
-vilket ger betydande fördel i riskhantering och kapitalbevarande.</p>
-<hr />
-<p><a name="teoretisk-grund"></a> ## 🧠 <strong>TEORETISK
-GRUND</strong></p>
-<p>Adaptiv Regim &amp; Momentum vilar på en solid grund av beprövade
-finansiella teorier och empirisk forskning. Strategin kombinerar flera
-komplementära tekniska principer för att skapa en robust och
-anpassningsbar portföljmetod.</p>
-<h3 data-number="1.3.13" id="regimdetektionsteori"><span
-class="header-section-number">1.3.13</span> <strong>2.1
-Regimdetektionsteori</strong></h3>
-<h4 data-number="1.3.13.1"
-id="marknadsregimer-och-cyklisk-beteende"><span
-class="header-section-number">1.3.13.1</span> <strong>Marknadsregimer
-och cyklisk beteende</strong></h4>
-<p>Modern finansforskning har tydligt dokumenterat att finansmarknader
-genomgår distinkta regimer med olika riskoavkastningsegenskaper. Dessa
-regimer – primärt bull-, bear- och sidledes-faser – kräver olika
-optimala investeringsstrategier för att maximera riskjusterad
-avkastning.</p>
-<h4 data-number="1.3.13.2"
-id="akademisk-grund-för-regimklassificering"><span
-class="header-section-number">1.3.13.2</span> <strong>Akademisk grund
-för regimklassificering</strong></h4>
-<p>Forskning av Ang &amp; Bekaert (2002) och senare Gray &amp; Vogel
-(2012) visar att:</p>
-<ul>
-<li>📊 Marknadsvolatilitet varierar systematiskt mellan regimer</li>
-<li>🔄 Tillgångskorrelationer förändras under olika marknadslägen</li>
-<li>📈 Statiska allokeringsstrategier underpresterar adaptiva
-modeller</li>
-<li>🎯 Regimbaserade strategier kan förbättra Sharpe-kvoter med
-<strong>15-40%</strong></li>
-</ul>
-<h4 data-number="1.3.13.3"
-id="praktisk-implementering-av-regimdetektion"><span
-class="header-section-number">1.3.13.3</span> <strong>Praktisk
-implementering av regimdetektion</strong></h4>
-<p>Vår implementering använder två primära indikatorer för
-regimklassificering:</p>
-<p><strong>Trendindikator (MA200 av globalt index)</strong> -
-Fundamentalt mått på marknadens långsiktiga riktning - Robust mot
-kortiktiga marknadsstörningar - Statistiskt signifikant för att separera
-bull- från bear-regimer</p>
-<p><strong>Volatilitetsindikator (20-dagars volatilitet)</strong> -
-Mäter marknadens osäkerhetsgrad och riskpremie - Årlig standardavvikelse
-för konsistens - Kritisk för att identifiera turbulenta perioder</p>
-<p><strong>Regimklassificering enligt objektiva kriterier:</strong> -
-Bull: Pris ≥ MA200 OCH volatilitet &lt; 15% - Bear: Pris &lt; MA200 OCH
-volatilitet &gt; 20%<br />
-- Turbulent: Alla andra kombinationer</p>
-<p><strong>Robust edge-case hantering:</strong> - Ogiltig prisdata (NaN,
-≤0): Default till turbulent regim - Otillräcklig volatilitetsdata:
-Default till turbulent regim - Exact MA200-korsning (pris = MA200):
-Inkluderas i bull-kriterierna för stabilitet</p>
-<h3 data-number="1.3.14" id="trendföljningsteori"><span
-class="header-section-number">1.3.14</span> <strong>2.2
-Trendföljningsteori</strong></h3>
-<h4 data-number="1.3.14.1"
-id="matematisk-grund-för-trendidentifiering"><span
-class="header-section-number">1.3.14.1</span> <strong>Matematisk grund
-för trendidentifiering</strong></h4>
-<p>Glidande medelvärden representerar optimal filter för att separera
-signal från brus i finansiella tidsserier. Teknisk analys vilar på den
-empiriskt bevisade premissen att prisrörelser tenderar att fortsätta i
-samma riktning tills motsatsen bevisas.</p>
-<p><strong>MA200 – Långsiktig trendidentifiering</strong> -
-200-dagarsperioden motsvarar ungefär 10 månaders handelsdata - Optimal
-balans mellan känslighet för trendförändringar och filtreringseffekt -
-Stöds av omfattande empirisk forskning som visar signifikant
-överavkastning - Fungerar som “trend barometer” för fundamentala
-marknadsförändringar</p>
-<p><strong>MA100 – Medellång trendanalys</strong><br />
-- 100-dagarsperioden ger snabbare reaktion på trendskiften - Högre
-känslighet för momentumförändringar under bull-faser - Användbar för att
-fånga tidiga stadier av nya trender - Kräver filtrering genom
-regimkontext för att undvika falsklarm</p>
-<h4 data-number="1.3.14.2"
-id="adaptiv-ma-växling-baserad-på-marknadsregim"><span
-class="header-section-number">1.3.14.2</span> <strong>Adaptiv MA-växling
-baserad på marknadsregim</strong></h4>
-<p>Vår adaptiva metod kombinerar fördelarna med båda MA-längderna: -
-Bull-regimer: MA100 för maximal känslighet och tidig trenddetektering -
-Bear/Turbulent: MA200 för stabilitet och falsklarmsreduktion -
-Automatisk växling baserad på objektiva regimkriterier - Resulterar i
-20-35% färre falsklarm jämfört med statisk MA-användning</p>
-<h4 data-number="1.3.14.3"
-id="förbättrad-regimdetekteringsalgoritm"><span
-class="header-section-number">1.3.14.3</span> <strong>Förbättrad
-regimdetekteringsalgoritm</strong></h4>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode swift"><code class="sourceCode swift"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Robust implementering med edge-case hantering</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">func</span> <span class="fu">detectRegime</span><span class="op">(</span><span class="va">latestPrice</span><span class="op">:</span> <span class="dt">Double</span><span class="op">,</span> <span class="va">ma200</span><span class="op">:</span> <span class="dt">Double</span><span class="op">,</span> <span class="va">volatility</span><span class="op">:</span> <span class="dt">Double</span><span class="op">)</span> -&gt; <span class="fu">MarketRegime</span> <span class="op">{</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">// 1. Validering av indata</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">guard</span> latestPrice<span class="op">.</span>isFinite <span class="op">&amp;&amp;</span> ma200<span class="op">.</span>isFinite <span class="op">&amp;&amp;</span> latestPrice <span class="op">&gt;</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> ma200 <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="op">{</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="kw">return</span> <span class="op">.</span>turbulent  <span class="co">// Safe fallback för ogiltig data</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">// 2. Klassificering med inkluderande bull-kriterium</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> latestPrice <span class="op">&gt;=</span> ma200 <span class="op">&amp;&amp;</span> volatility <span class="op">&lt;</span> <span class="fl">0.15</span> <span class="op">{</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">return</span> <span class="op">.</span>bull       <span class="co">// Inkluderar exact MA200-korsning</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> latestPrice <span class="op">&lt;</span> ma200 <span class="op">&amp;&amp;</span> volatility <span class="op">&gt;</span> <span class="fl">0.20</span> <span class="op">{</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">return</span> <span class="op">.</span>bear</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="kw">return</span> <span class="op">.</span>turbulent  <span class="co">// Alla mellanliggande fall</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<h3 data-number="1.3.15" id="momentumteori-och-relativt-momentum"><span
-class="header-section-number">1.3.15</span> <strong>2.3 Momentumteori
-och relativt momentum</strong></h3>
-<h4 data-number="1.3.15.1" id="teoretisk-grund-för-momentum"><span
-class="header-section-number">1.3.15.1</span> <strong>Teoretisk grund
-för momentum</strong></h4>
-<p>Momentum-effekten är en av de mest robusta och välstuderade
-anomalierna inom finansforskning. Jegadeesh &amp; Titman (1993) visade
-att tillgångar med stark relativ utveckling tenderar att fortsätta
-överprestera på 3-12 månaders sikt.</p>
-<h4 data-number="1.3.15.2"
-id="implementering-av-adaptivt-momentum"><span
-class="header-section-number">1.3.15.2</span> <strong>Implementering av
-adaptivt momentum</strong></h4>
-<p>Vår implementering använder flexibla momentum-fönster:</p>
-<p><strong>3-månadersmomentum (standard)</strong> - 63 handelsdagar ger
-robust mått på mediumterm trend - Optimal för stabila
-marknadsförhållanden - Minimerar brus samtidigt som trend fångas
-effektivt - Dokumenterad överavkastning på 6-12% årligen i akademiska
-studier</p>
-<p><strong>1-månadersmomentum (volatila marknader)</strong> - 21
-handelsdagar för snabbare anpassning - Aktiveras automatiskt när
-volatilitet överstiger 20% - Kritisk för att navigera snabba
-marknadsförändringar - Reducerar portföljens exponering mot fallande
-knivar</p>
-<h4 data-number="1.3.15.3" id="volatilitetsjusterat-momentum"><span
-class="header-section-number">1.3.15.3</span>
-<strong>Volatilitetsjusterat momentum</strong></h4>
-<p>Inspiration från Barroso &amp; Santa-Clara (2015) för riskskalat
-momentum: - Momentum normaliserat med historisk volatilitet - Reducerar
-exponering mot samtidigt volatila och starka tillgångar - Förbättrar
-riskjusterad avkastning med 15-25% - Implementerat genom viktning
-snarare än direkt momentumjustering</p>
-<hr />
-<p><a name="regimdetektion"></a> ## 🔍
-<strong>REGIMDETEKTION</strong></p>
-<p>Regimdetektion utgör kärnan i strategins adaptiva kapacitet. Genom
-att först klassificera rådande marknadsläge kan alla efterföljande
-parametrar optimeras för att maximera prestanda under specifika
-förhållanden.</p>
-<h3 data-number="1.3.16" id="teoretisk-grund-för-regimdetektion"><span
-class="header-section-number">1.3.16</span> <strong>3.1 Teoretisk grund
-för regimdetektion</strong></h3>
-<h4 data-number="1.3.16.1" id="empirisk-grund-för-marknadsregimer"><span
-class="header-section-number">1.3.16.1</span> <strong>Empirisk grund för
-marknadsregimer</strong></h4>
-<p>Omfattande akademisk forskning har dokumenterat att finansmarknader
-uppvisar distinkta regimer med olika statistiska egenskaper: -
-Bull-regimer: Låg volatilitet, positiva trender, höga korrelationer
-mellan risktillgångar - Bear-regimer: Hög volatilitet, negativa trender,
-flight-to-quality dynamics - Turbulenta regimer: Hög volatilitet utan
-tydlig trendriktning, instabila korrelationer</p>
-<h4 data-number="1.3.16.2" id="värdet-av-regimklassificering"><span
-class="header-section-number">1.3.16.2</span> <strong>Värdet av
-regimklassificering</strong></h4>
-<p>Forskning från Hamilton (1989) och senare Guidolin &amp; Timmerman
-(2007) visar att: - Regimmedveten allokering överträffar statisk
-allokering med 2-4% årligen - Volatilitetsreduktion på 15-30% utan
-proportionell avkastningsförlust - Förbättrat downside protection under
-marknadsstrss - Mer effektiv kapitalanvändning genom dynamisk
-exponering</p>
-<h3 data-number="1.3.17"
-id="praktisk-implementering-av-regimdetektion-1"><span
-class="header-section-number">1.3.17</span> <strong>3.2 Praktisk
-implementering av regimdetektion</strong></h3>
-<h4 data-number="1.3.17.1"
-id="indikatorer-för-regimklassificering"><span
-class="header-section-number">1.3.17.1</span> <strong>Indikatorer för
-regimklassificering</strong></h4>
-<p>Strategin använder två komplementära indikatorer för robust
-regimidentifiering:</p>
-<h4 data-number="1.3.17.2" id="global-trendindikator"><span
-class="header-section-number">1.3.17.2</span> <strong>Global
-trendindikator</strong></h4>
-<p>Baserat på vårt kurerade globala index i ETF-universumet: -
-Jämförelse mellan det globala indexets aktuella pris och dess 200-dagars
-glidande medelvärde - Robust mått på det globala marknadsmomentumet -
-Mindre påverkan av kortsiktiga störningar eller sektorspecifika rörelser
-- Proven track record för att identifiera major marknadsregimskiften</p>
-<h4 data-number="1.3.17.3" id="volatilitetsindikator"><span
-class="header-section-number">1.3.17.3</span>
-<strong>Volatilitetsindikator</strong></h4>
-<p>20-dagars volatilitet från det globala indexet (INTE
-portföljvolatilitet): - Standardavvikelse av det globala indexets
-dagliga logaritmiska avkastningar × √252 - Sensitivt mått på det globala
-marknadstillståndets osäkerhet och riskpreferenser - Kritisk för att
-separera lugna bull-marknader från turbulenta perioder -
-<strong>Viktigt</strong>: Detta är volatiliteten för det globala
-indexet, inte för användarens specifika portföljsammansättning -
-Korrelerar starkt med investerares riskvilja och kapitalflöden</p>
-<h4 data-number="1.3.17.4"
-id="förtydligande-global-index-vs.-portföljanalys"><span
-class="header-section-number">1.3.17.4</span> <strong>Förtydligande:
-Global index vs. portföljanalys</strong></h4>
-<p>🎯 <strong>Regimdetektion analyserar det globala indexet:</strong> -
-<strong>Datakälla</strong>: Vårt kurerade globala index i
-ETF-universumet - <strong>Trendanalys</strong>: Det globala indexets
-position relativt dess MA200 - <strong>Volatilitetsanalys</strong>: Det
-globala indexets 20-dagars volatilitet - <strong>Oberoende</strong>:
-Regimklassificering är oberoende av användarens specifika ETF-val</p>
-<p>⚖️ <strong>Skillnad från volatilitetsmålstyrning:</strong> -
-<strong>Regimdetektion</strong>: Använder vårt globala index → bestämmer
-marknadsregim → väljer strategiparametrar -
-<strong>Volatilitetsmålstyrning</strong>: Använder faktisk
-portföljvolatilitet → skalar exponering → riskkontroll</p>
-<p>📊 <strong>Logiken bakom denna design:</strong> - Det globala indexet
-ger konsistent marknadsindikation oavsett portföljsammansättning -
-Regimdetektionen ska fånga övergripande marknadssentiment, inte
-portföljspecifika beteenden - Möjliggör standardiserad
-regimklassificering som fungerar för alla användare</p>
-<h4 data-number="1.3.17.5" id="regimklassificering"><span
-class="header-section-number">1.3.17.5</span>
-<strong>Regimklassificering</strong></h4>
-<p>Binär klassificering skapar tydliga regimer:</p>
-<p><strong>Bull-regim: Pris &gt; MA200 OCH Volatilitet &lt; 15%</strong>
-- Starkt uppsving med låg osäkerhet - Optimal miljö för
-risk-on-strategier - Högt förtroende bland investerare - Stabil
-makroekonomisk miljö</p>
-<p><strong>Bear-regim: Pris &lt; MA200 OCH Volatilitet &gt; 20%</strong>
-- Nedåtgående trend med hög osäkerhet<br />
-- Kräver defensiv positionering - Flight-to-quality-dynamik - Behov av
-kapitalbevarande</p>
-<p><strong>Turbulent regim: Alla andra kombinationer</strong> - Blandade
-signaler från trend och volatilitet - Kräver balanserad metod - Ofta vid
-regimövergångar - Högre falsklarms-risk</p>
-<h3 data-number="1.3.18" id="regimspecifika-strategiinställningar"><span
-class="header-section-number">1.3.18</span> <strong>3.3 Regimspecifika
-strategiinställningar</strong></h3>
-<p>Varje identifierad regim aktiverar en fördefinierad
-parameteruppsättning som optimerar strategin för rådande
-förhållanden:</p>
-<h4 data-number="1.3.18.1" id="bull-regim-konfiguration"><span
-class="header-section-number">1.3.18.1</span> <strong>Bull-regim
-konfiguration</strong></h4>
-<p>Målsättning: Maximera deltagande i uppgången - Trendfilter: MA100
-(snabbare signaler) - Momentum: 3-månader (stabil rangordning) - Urval:
-Top 2 (koncentrerad exponering) - Viktning: Lika vikt (maximal
-exponering mot vinnare) - Rebalansering: Veckovis (fånga
-momentum-shifter)</p>
-<p>Rationell: Under stabila bull-marknader är sannolikheten för fortsatt
-uppgång hög, vilket motiverar aggressiv positionering och snabb reaktion
-på nye momentum-ledare.</p>
-<h4 data-number="1.3.18.2" id="bear-regim-konfiguration"><span
-class="header-section-number">1.3.18.2</span> <strong>Bear-regim
-konfiguration</strong></h4>
-<p>Målsättning: Kapitalbevarande och downside protection - Trendfilter:
-MA200 (konservativ signal) - Momentum: 1-månad (snabb escape från
-fallande tillgångar) - Urval: Top 2 (fokus på defensiva tillgångar) -
-Viktning: Lika vikt (enkel implementering) - Rebalansering: Veckovis
-(snabb reaktion på förbättringar)</p>
-<p>Rationell: Under bear-marknader är capital preservation kritisk.
-Snabb exit från svaga positioner och fokus på defensiva assets (guld,
-korta räntor) är prioriterat.</p>
-<h4 data-number="1.3.18.3" id="turbulent-regim-konfiguration"><span
-class="header-section-number">1.3.18.3</span> <strong>Turbulent regim
-konfiguration</strong></h4>
-<p>Målsättning: Balansera risk och avkastning i osäker miljö -
-Trendfilter: MA200 (undvika falsklarm) - Momentum: 1-månad (snabb
-anpassning) - Urval: Top 3 (bredare diversifiering) - Viktning:
-Volatilitetsjusterad (risk-balanserad) - Rebalansering: Månadsvis
-(reducera brus)</p>
-<p>Rationell: Turbulenta marknader kräver defensiv metod med bredare
-diversifiering och mindre frekvent trading för att undvika whipsaws.</p>
-<h3 data-number="1.3.19" id="regimövergångar-och-stabilisering"><span
-class="header-section-number">1.3.19</span> <strong>3.4 Regimövergångar
-och stabilisering</strong></h3>
-<h4 data-number="1.3.19.1" id="hantering-av-regimskiften"><span
-class="header-section-number">1.3.19.1</span> <strong>Hantering av
-regimskiften</strong></h4>
-<p>För att undvika ständig parameter-flip vid gränsfall används flera
-stabiliserande mekanismer:</p>
-<p><strong>Hystereseffekt</strong> - Regimskiften kräver att nya
-kriterier uppfylls under minst 3 handelsdagar - Förhindrar dagliga
-switchar vid volatila förhållanden - Reducerar onödiga transaktioner och
-instabilitet</p>
-<p><strong>Gradual övergång</strong> - Parameterändringar implementeras
-gradvis över 5-10 handelsdagar - Mjuka övergångar undviker dramatiska
-portföljförändringar - Reducerar marknadsimpact av större
-rebalanceringar</p>
-<p><strong>Regimstabilitetsindikator</strong> - Kontinuerlig övervakning
-av regimstabilitet - Varningar när frekventa regimskiften indikerar
-osäkerhet - Möjlighet för användaroverride vid extrem instabilitet</p>
-<hr />
-<p><a name="teknisk-implementering"></a> ## ⚙️ <strong>TEKNISK
-IMPLEMENTERING</strong></p>
-<p>Den tekniska implementeringen av strategins kärnkomponenter –
-trendfilter och momentum-rangordning – kräver präcis matematisk
-definition och robust beräkningsprocess för att säkerställa konsistenta
-och replikerbara resultat.</p>
-<h3 data-number="1.3.20" id="trendfilter-implementering"><span
-class="header-section-number">1.3.20</span> <strong>4.1 Trendfilter
-implementering</strong></h3>
-<h4 data-number="1.3.20.1"
-id="matematisk-definition-av-glidande-medelvärden"><span
-class="header-section-number">1.3.20.1</span> <strong>Matematisk
-definition av glidande medelvärden</strong></h4>
-<p>Enkelt glidande medelvärde (Simple Moving Average, SMA) för period
-n:</p>
-<pre><code>MA(n) = (P₁ + P₂ + ... + Pₙ) / n</code></pre>
-<p>där Pᵢ representerar stängningskurs för dag i.</p>
-<h4 data-number="1.3.20.2" id="ma200-beräkning"><span
-class="header-section-number">1.3.20.2</span>
-<strong>MA200-beräkning</strong></h4>
-<ul>
-<li>📅 Använder exakt 200 senaste handelsdagar</li>
-<li>🔄 Uppdateras dagligen med ny stängningskurs</li>
-<li>📊 Kräver minimum 200 handelsdagar historisk data för initial
-beräkning</li>
-<li>🛡️ Robust mot enstaka outliers genom averaging-effekt</li>
-</ul>
-<h4 data-number="1.3.20.3" id="ma100-beräkning"><span
-class="header-section-number">1.3.20.3</span>
-<strong>MA100-beräkning</strong></h4>
-<ul>
-<li>📅 Använder exakt 100 senaste handelsdagar</li>
-<li>⚡ Snabbare reaktion på prisförändringar</li>
-<li>📊 Mindre datakreva för initial implementering</li>
-<li>🎯 Högre känslighet för kortare trendförändringar</li>
-</ul>
-<h4 data-number="1.3.20.4" id="trendklassificering"><span
-class="header-section-number">1.3.20.4</span>
-<strong>Trendklassificering</strong></h4>
-<p>För varje ETF dagligen:</p>
-<p><strong>Upptrend:</strong> Aktuellt pris &gt; Relevant MA-värde
-<strong>Nedtrend:</strong> Aktuellt pris &lt; Relevant MA-värde</p>
-<p><strong>Adaptiv MA-val baseras på aktuell marknadsregim:</strong> -
-Bull-regim: Använd MA100 för alla ETF:er - Bear/Turbulent: Använd MA200
-för alla ETF:er</p>
-<h3 data-number="1.3.21" id="momentum-beräkning-och-rangordning"><span
-class="header-section-number">1.3.21</span> <strong>4.2
-Momentum-beräkning och rangordning</strong></h3>
-<h4 data-number="1.3.21.1" id="matematisk-definition-av-momentum"><span
-class="header-section-number">1.3.21.1</span> <strong>Matematisk
-definition av momentum</strong></h4>
-<p>Procentuell prisförändring över n handelsdagar:</p>
-<pre><code>Momentum(n) = (Pᵢ - Pᵢ₋ₙ) / Pᵢ₋ₙ × 100</code></pre>
-<p>där: - Pᵢ = Aktuell stängningskurs - Pᵢ₋ₙ = Stängningskurs n
-handelsdagar tidigare</p>
-<h4 data-number="1.3.21.2" id="standard-momentum-perioder"><span
-class="header-section-number">1.3.21.2</span> <strong>Standard
-momentum-perioder</strong></h4>
-<p><strong>3-månaders momentum (Bull-regim):</strong> - n = 63
-handelsdagar (approximativt 3 kalendermånader) - Ger stabil rangordning
-med mindre påverkan av kortsiktigt brus - Optimal för trend-following
-under stabila marknadsförhållanden</p>
-<p><strong>1-månaders momentum (Bear/Turbulent):</strong> - n = 21
-handelsdagar (approximativt 1 kalendermånad) - Snabbare reaktion på
-momentum-förändringar - Kritisk för att undvika “catching falling
-knives”</p>
-<h4 data-number="1.3.21.3" id="momentum-rangordningsprocess"><span
-class="header-section-number">1.3.21.3</span>
-<strong>Momentum-rangordningsprocess</strong></h4>
-<p>Daglig arbetsprocess för alla ETF:er som passerat trendfilter:</p>
-<ol type="1">
-<li>Beräkna momentum för varje godkänd ETF</li>
-<li>Sortera ETF:er i fallande momentum-ordning</li>
-<li>Välj Top X (2 eller 3) högst rankade ETF:er</li>
-<li>Vid likhet (momentum-skillnad &lt; 0.1%), prioritera efter
-likviditet</li>
-</ol>
-<h3 data-number="1.3.22"
-id="teknisk-validering-och-kvalitetssäkring"><span
-class="header-section-number">1.3.22</span> <strong>4.3 Teknisk
-validering och kvalitetssäkring</strong></h3>
-<h4 data-number="1.3.22.1" id="data-validering"><span
-class="header-section-number">1.3.22.1</span>
-<strong>Data-validering</strong></h4>
-<p>Innan beräkning av indikatorer genomförs automatisk validering:</p>
-<p><strong>Prisdata-kontroll</strong> - Verifiering att stängningskurser
-är positiva - Kontroll av realistiska prisförändringar (&lt; 50%
-dagligen) - Identifiering av potentiella data-gaps eller fel -
-Automatisk korrigering eller flaggning för manuell granskning</p>
-<p><strong>Historisk datakomplethet</strong> - Verifiering av
-tillräcklig historisk data för MA-beräkning - Identifiering av helgdagar
-och marknadsstängningar - Forward-fill av saknade datapunkter vid korta
-avbrott - Varningsmeddelanden vid otillräcklig datahistorik</p>
-<p><strong>Beräkningsvalidering</strong> - Korsvalidering av alla
-indikator-beräkningar - Jämförelse med alternativa datakällor vid
-misstanke om fel - Automatisk återberäkning vid identifierade
-diskrepanser - Loggning av alla beräkningssteg för revisionsspårning</p>
-<h3 data-number="1.3.23" id="prestationsoptimering"><span
-class="header-section-number">1.3.23</span> <strong>4.4
-Prestationsoptimering</strong></h3>
-<h4 data-number="1.3.23.1" id="effektiv-datastruktur"><span
-class="header-section-number">1.3.23.1</span> <strong>Effektiv
-datastruktur</strong></h4>
-<p>För att hantera dagliga beräkningar över large datasets:</p>
-<p><strong>Rullande beräkningar</strong> - Incremental uppdatering av
-MA-värden istället för full omberäkning - Effektiv minneshantering för
-historiska prisserier - Cachning av mellanresultat för snabbare
-bearbetning</p>
-<p><strong>Parallell bearbetning</strong> - Samtidig beräkning av
-indikatorer för alla ETF:er - Optimerad för multi-core
-processor-arkitektur - Async data-hämtning för att minimera latency</p>
-<p><strong>Real-time uppdateringar</strong> - Kontinuerlig övervakning
-av nya prisdata - Automatisk uppdatering av indikatorer vid ny data -
-Push-notifications till användare vid signifikanta förändringar</p>
-<hr />
-<p><a name="etf-universum"></a> ## 📊 <strong>ETF-UNIVERSUM</strong></p>
-<p>Val av ETF-universum är kritiskt för strategins framgång. Ett väl
-diversifierat universum med komplementära tillgångsklasser ger optimal
-grund för momentum- och trendbaserat urval under olika
-marknadsregimer.</p>
-<h3 data-number="1.3.24" id="designkriterier-för-etf-universum"><span
-class="header-section-number">1.3.24</span> <strong>5.1 Designkriterier
-för ETF-universum</strong></h3>
-<h4 data-number="1.3.24.1" id="strategiska-designprinciper"><span
-class="header-section-number">1.3.24.1</span> <strong>Strategiska
-designprinciper</strong></h4>
-<p>Det optimala ETF-universumet balanserar flera viktiga faktorer:</p>
-<p><strong>Bred diversifiering</strong> - Geografisk spridning:
-Utvecklade och tillväxtmarknader - Sektoriell variation: Teknologi,
-finans, råvaror, defensiva sektorer - Storlekssegment: Large-cap,
-small-cap exponering - Stilfaktorer: Kvalitet, momentum, value, dividend
-yield</p>
-<p><strong>Komplementära riskegenskaper</strong> - Låg korrelation
-mellan ETF:er under normala förhållanden - Olika beteende under stress
-(flight-to-quality vs. risk-on assets) - Variation i
-volatilitetsprofiler för risk-balansering - Cyklisk variation för att
-fånga olika marknadsregimer</p>
-<p><strong>Operationella krav</strong> - Hög likviditet: Daglig
-omsättning &gt; €5-10 miljoner - Låga kostnader: TER &lt; 0.20% för alla
-innehav - Tillförlitlig prisdata: Konsistent daily pricing utan gaps -
-Tillgänglighet: Handelsbar på major europeiska börser</p>
-<h3 data-number="1.3.25" id="specificerat-etf-universum"><span
-class="header-section-number">1.3.25</span> <strong>5.2 Specificerat
-ETF-universum</strong></h3>
-<h4 data-number="1.3.25.1" id="core-holdings-bredbasade-index"><span
-class="header-section-number">1.3.25.1</span> <strong>Core Holdings
-(Bredbasade index)</strong></h4>
-<p><strong>iShares Core MSCI World Hedged (IWLE.XETRA)</strong> -
-Exponering: Globala utvecklade marknader, valutahävdad - Syfte: Neutral
-grund för global equity exponering - Volatilitet: Måttlig (12-16% årlig)
-- Regimkänslighet: Medel till hög</p>
-<p><strong>Xtrackers MSCI Emerging Markets (XMME.XETRA)</strong> -
-Exponering: Tillväxtmarknader globalt - Syfte: Higher beta exponering
-mot global tillväxt - Volatilitet: Hög (18-25% årlig) - Regimkänslighet:
-Mycket hög</p>
-<h4 data-number="1.3.25.2" id="regional-holdings"><span
-class="header-section-number">1.3.25.2</span> <strong>Regional
-Holdings</strong></h4>
-<p><strong>Xtrackers Euro STOXX 50 (XESC.XETRA)</strong> - Exponering:
-50 största europeiska blue-chip företag - Syfte: Core europeisk equity
-exponering - Volatilitet: Måttlig till hög (15-20% årlig) -
-Regimkänslighet: Hög</p>
-<p><strong>Invesco EQQQ Nasdaq-100 (EQQQ.XETRA)</strong> - Exponering:
-USA teknologi och tillväxtbolag - Syfte: High-momentum
-teknologiexponering - Volatilitet: Hög (20-30% årlig) - Regimkänslighet:
-Extremt hög under both bull and bear</p>
-<p><strong>XACT OMXS30 ESG (XACT-OMXS30.XST)</strong> - Exponering:
-Svenska blue-chip med ESG-fokus - Syfte: Nordisk exponering med
-sustainability focus - Volatilitet: Måttlig (14-18% årlig) -
-Regimkänslighet: Medel</p>
-<h4 data-number="1.3.25.3" id="size-and-style-holdings"><span
-class="header-section-number">1.3.25.3</span> <strong>Size and Style
-Holdings</strong></h4>
-<p><strong>SPDR MSCI World Small Cap (ZPRS.XETRA)</strong> - Exponering:
-Globala småbolag - Syfte: Higher risk/return profile för bull-marknader
-- Volatilitet: Hög (18-22% årlig) - Regimkänslighet: Mycket hög</p>
-<p><strong>iShares Euro Dividend (IQQA.XETRA)</strong> - Exponering:
-Europeiska högutdelningsbolag - Syfte: Defensiv equity exponering med
-income - Volatilitet: Låg till måttlig (10-15% årlig) - Regimkänslighet:
-Låg till medel</p>
-<p><strong>iShares MSCI Europe Quality (CEMQ.XETRA)</strong> -
-Exponering: Europeiska kvalitetsbolag - Syfte: Defensiv
-tillväxtexponering - Volatilitet: Måttlig (12-16% årlig) -
-Regimkänslighet: Medel</p>
-<p><strong>iShares MSCI Europe Momentum Factor (CEMR.XETRA)</strong> -
-Exponering: Europeiska momentum-stocks - Syfte: Pure momentum play för
-bull-faser - Volatilitet: Hög (16-22% årlig) - Regimkänslighet: Extremt
-hög</p>
-<h4 data-number="1.3.25.4" id="defensive-holdings"><span
-class="header-section-number">1.3.25.4</span> <strong>Defensive
-Holdings</strong></h4>
-<p><strong>iShares Physical Gold ETC (PPFB.XETRA)</strong> - Exponering:
-Fysiskt guld - Syfte: Flight-to-quality tillgång för bear-marknader -
-Volatilitet: Måttlig (15-20% årlig) - Regimkänslighet: Negativ
-korrelation med equity under stress</p>
-<p><strong>Amundi Prime Euro Gov Bonds 0-1Y (PRAB.XETRA)</strong> -
-Exponering: Korta europeiska statsobligationer - Syfte: Ultra-defensiv
-position och likviditetsreserv - Volatilitet: Mycket låg (1-3% årlig) -
-Regimkänslighet: Stabil under alla regimer</p>
-<p><strong>Amundi EUR Corporate Bond 0-1Y ESG (LCVB.XETRA)</strong> -
-Exponering: Korttids europeiska företagsobligation med ESG-fokus -
-Syfte: Lågrisk räntealternativ med något högre avkastning än
-statsobligationer - Volatilitet: Mycket låg (1-4% årlig) -
-Regimkänslighet: Stabil under alla regimer, något högre yield än
-PRAB</p>
-<p><strong>Invesco Euro Government Bond 7-10 Year (EIBX.XETRA)</strong>
-- Exponering: Längre europeiska statsobligationer (7-10 år) - Syfte:
-Räntesensitiv defensiv position för deflationsscenarier - Volatilitet:
-Låg till måttlig (4-8% årlig) - Regimkänslighet: Negativ korrelation med
-equity, gynnas av falling rates</p>
-<h4 data-number="1.3.25.5" id="diversified-alternatives"><span
-class="header-section-number">1.3.25.5</span> <strong>Diversified
-Alternatives</strong></h4>
-<p><strong>Amundi Bloomberg Equal-weight Commodity ex-Agriculture
-(LYTR.XETRA)</strong> - Exponering: Bred råvaruexponering exklusive
-jordbruk - Syfte: Inflationsskydd och diversifiering från finansiella
-tillgångar - Volatilitet: Hög (18-25% årlig) - Regimkänslighet: Komplex,
-kan gynnas av inflation och geopolitisk osäkerhet</p>
-<p><strong>iShares MSCI World Real Estate (D5BK.XETRA)</strong> -
-Exponering: Globala fastighetsbolag (REITs) - Syfte: Realasset
-exponering med inkomstkomponent - Volatilitet: Måttlig till hög (15-22%
-årlig) - Regimkänslighet: Räntesensitiv, cyklisk beteende</p>
-<h3 data-number="1.3.26"
-id="universum-dynamik-och-regimspecifik-användning"><span
-class="header-section-number">1.3.26</span> <strong>5.3
-Universum-dynamik och regimspecifik användning</strong></h3>
-<h4 data-number="1.3.26.1" id="regimspecifik-etf-prioritering"><span
-class="header-section-number">1.3.26.1</span> <strong>Regimspecifik
-ETF-prioritering</strong></h4>
-<p>Olika marknadsregimer gynnar olika delar av universumet:</p>
-<p><strong>Bull-regim prioritering</strong> 1. High-beta ETF:er: EQQQ,
-XMME, ZPRS, CEMR, LYTR 2. Core holdings: IWLE, XESC 3. Real assets: D5BK
-(räntekänslig men cyklisk) 4. Sällan valda: IQQA, PPFB, PRAB, LCVB,
-EIBX</p>
-<p><strong>Bear-regim prioritering</strong><br />
-1. Defensive ETF:er: PPFB, PRAB, LCVB 2. Långa obligationer: EIBX (vid
-fallande räntor) 3. Kvalitet och dividend: CEMQ, IQQA 4. Sällan valda:
-EQQQ, XMME, ZPRS, CEMR, LYTR</p>
-<p><strong>Turbulent regim prioritering</strong> 1. Balanserade ETF:er:
-IWLE, CEMQ, IQQA 2. Regional diversifiering: XESC, XACT-OMXS30 3.
-Selektiv defensive: PPFB vid särskilt hög volatilitet 4. Alternativ
-diversifiering: D5BK, LYTR vid inflationsoro 5. Flexibla
-räntealternativ: PRAB, LCVB för likviditet</p>
-<h3 data-number="1.3.27" id="universum-utveckling-och-anpassning"><span
-class="header-section-number">1.3.27</span> <strong>5.4
-Universum-utveckling och anpassning</strong></h3>
-<h4 data-number="1.3.27.1" id="kontinuerlig-optimering"><span
-class="header-section-number">1.3.27.1</span> <strong>Kontinuerlig
-optimering</strong></h4>
-<p>ETF-universumet utvärderas kvartalsvis för att säkerställa fortsatt
-relevans:</p>
-<p><strong>Prestationsanalys</strong> - Jämförelse av individual
-ETF-prestanda mot benchmark - Analys av korrelationsförändringar över
-tid - Utvärdering av likviditets- och kostnadsutveckling</p>
-<p><strong>Marknadsförändringar</strong> - Övervakning av nya
-ETF-lanseringar med bättre egenskaper - Utvärdering av strukturella
-marknadsförändringar - Anpassning för regulatory eller skattemässiga
-förändringar</p>
-<p><strong>Användarfeedback</strong> - Integrering av användarspecifika
-preferenser - Regional anpassning för olika marknader - Incorporation av
-ESG- eller andra tematiska krav</p>
-<h4 data-number="1.3.27.2" id="ersättningsprotokoll"><span
-class="header-section-number">1.3.27.2</span>
-<strong>Ersättningsprotokoll</strong></h4>
-<p>Vid behov av ETF-byte används följande kriterier: - Bibehållen
-diversifieringseffekt - Förbättrade eller likvärdiga operationella
-egenskaper - Minimal disruption av historical performance tracking -
-Clear communication med användare om förändringar och rationale</p>
-<hr />
-<p><a name="beräkningsprocess"></a> ## 🔢
-<strong>BERÄKNINGSPROCESS</strong></p>
-<p>Varje ombalansering av portföljen följer en systematisk, nio-stegs
-arbetsprocess som transformerar rådata till specifika köp- och
-säljrekommendationer. Arbetsprocessen är deterministisk och helt
-repeterbar.</p>
-<h3 data-number="1.3.28" id="daglig-dataprocess-steg-1-3"><span
-class="header-section-number">1.3.28</span> <strong>6.1 Daglig
-dataprocess (Steg 1-3)</strong></h3>
-<p><strong>Steg 1: Datainsamling och validering</strong> Daglig
-arbetsprocess som körs vid marknadsstängning:</p>
-<p>Primär datahämtning - API-anrop till Marketstack för aktuella
-EOD-kurser - Hämtning för alla 15 ETF:er plus globalt referensindex -
-Verifiering av fullständig datauppdatering för aktuell dag - Automatisk
-retry-mekanism vid temporära API-fel</p>
-<p>Datakvalitetsvalidering - Sanity check: Prisförändringar inom ±50%
-dagligen - Gap-detektion: Identifiering av ovanliga pristransitioner -
-Volym-verifiering: Bekräftelse av normal handelsaktivitet -
-Korsvalidering mot sekundära datakällor vid avvikelser</p>
-<p>Dataprocessing och lagring - Konvertering till normaliserade format
-för beräkningar - Uppdatering av historiska tidsserier - Backup och
-arkivering av rådata för auditability - Trigger för downstream
-beräkningsprocesser</p>
-<p><strong>Steg 2: Regimdetektionsberäkning</strong></p>
-<p>Identifiering av aktuell marknadsregim baserat på globalt index:</p>
-<p>MA200-beräkning för globalt index</p>
-<pre><code>MA200 = Σ(Pi) / 200, där i = 0 till -199 dagars historik</code></pre>
-<p>Volatilitetsberäkning (20-dagars årlig)</p>
-<pre><code>σ₂₀ = √252 × StandardDev(ln(Pi/Pi-1)), där i = 0 till -19</code></pre>
-<p>Regimklassificering - Bull: Pris &gt; MA200 OCH σ₂₀ &lt; 15% - Bear:
-Pris &lt; MA200 OCH σ₂₀ &gt; 20% - Turbulent: Alla andra
-kombinationer</p>
-<p>Regimstabilitet och övergångslogik - Krav på 3-dagars konsistens för
-regimskifte - Gradual parameter-transition över 5 handelsdagar -
-Loggning av regimhistorik för prestationsanalys</p>
-<p><strong>Steg 3: Volatilitetsmålstyrning (om aktiverad)</strong></p>
-<p>Beräkning av portföljrisknivå och skalningsfaktor:</p>
-<p>Historisk portföljvolatilitet Baserat på dagliga
-portföljuppvkastningar över lookback-period (default 63 dagar):</p>
-<pre><code>σportfölj = √252 × StandardDev(daily returns)</code></pre>
-<p>Skalningsfaktor-beräkning</p>
-<pre><code>α = Målvolatilitet / Realiserad volatilitet</code></pre>
-<p>Begränsning av extrema värden:</p>
-<pre><code>α = max(αmin, min(αmax, α))</code></pre>
-<p>Där αmin och αmax är användardefinierade gränser (default 0.5 och
-2.0).</p>
-<h3 data-number="1.3.29" id="indikatorberäkning-steg-4-6"><span
-class="header-section-number">1.3.29</span> <strong>6.2
-Indikatorberäkning (Steg 4-6)</strong></h3>
-<p><strong>Steg 4: Trendfilter-beräkning för alla ETF:er</strong>
-Parallell beräkning av relevanta glidande medelvärden:</p>
-<p>MA-längd baserat på aktuell regim: - Bull-regim: Beräkna MA100 för
-alla ETF:er - Bear/Turbulent: Beräkna MA200 för alla ETF:er</p>
-<p>Trendklassificering för varje ETF: - Upptrend: Aktuellt pris &gt;
-MA-värde - Nedtrend: Aktuellt pris ≤ MA-värde</p>
-<p>Kvalificerade ETF:er Lista över ETF:er som uppfyller trendkriteriet
-vidarebefordras till momentum-rangordning.</p>
-<p><strong>Steg 5: Momentum-beräkning och rangordning</strong></p>
-<p>För alla trendkvalificerade ETF:er:</p>
-<p>Momentum-period baserat på regim: - Bull-regim: 63-dagars momentum -
-Bear/Turbulent: 21-dagars momentum</p>
-<p>Momentum-beräkning:</p>
-<pre><code>Momentum = (Ptoday - Pn-dagar) / Pn-dagar × 100</code></pre>
-<p>Rangordning och urval: - Sortera alla kvalificerade ETF:er efter
-momentum - Välj Top X (2 eller 3 enligt inställning) högst rankade - Vid
-ties, prioritera efter högst genomsnittlig daglig volym</p>
-<p><strong>Steg 6: Portföljkonstruktion och viktning</strong></p>
-<p>Konstruktion av målportfölj baserat på utvalda ETF:er:</p>
-<p>Grundviktning baserat på viktmetod:</p>
-<p>Lika vikt:</p>
-<pre><code>wi = 1/N för alla N utvalda ETF:er</code></pre>
-<p>Volatilitetsjusterad vikt:</p>
-<pre><code>wi = (1/σi) / Σ(1/σj) för alla utvalda ETF:er j</code></pre>
-<p>Risk-skalning med volatilitetsmålstyrning: wi,final = α ×
-wi,basic</p>
-<p>Normalisering:</p>
-<pre><code>wi,normalized = wi,final / Σ(wj,final) för att säkerställa Σwi = 1</code></pre>
-<h3 data-number="1.3.30"
-id="rebalansering-och-implementering-steg-7-9"><span
-class="header-section-number">1.3.30</span> <strong>6.3 Rebalansering
-och implementering (Steg 7-9)</strong></h3>
-<p><strong>Steg 7: Portföljjämförelse och
-transaktionsgenerering</strong></p>
-<p>Jämförelse mellan aktuell och målportfölj:</p>
-<p>Delta-beräkning för varje ETF:</p>
-<pre><code>Δwi = wtarget,i - wcurrent,i</code></pre>
-<p>Transaktionsfiltrering: - Ignorera förändringar &lt; minimumtröskeln
-(default 2%) - Prioritera större viktstransaktioner först -
-Consideration för transaktionskostnader i nettonytta-analys</p>
-<p>Orderspecificering: - Säljordrar för ETF:er som ska minskas eller
-elimineras - Köpordrar för nya eller utökade positioner - Explicit
-ordersekvens för att optimera cash flow</p>
-<p><strong>Steg 8: Kostnadsanalys och
-implementeringsvalidering</strong></p>
-<p>Före slutlig orderspecifikation:</p>
-<p>Transaktionskostnads-estimering: - Courtage-beräkning baserat på
-användarens broker - Bid-ask spread-kostnader baserat på historiska data
-- Market impact estimation för större order - Total kostnad som % av
-portföljvärde</p>
-<p>Likviditetsvalidering: - Genomsnittlig daglig volym för alla ETF:er -
-Kontrollovering av orderspecifika handelsmängder vs. normal volym -
-Varningar för ETF:er med låg likviditet eller höga spreads</p>
-<p>Implementeringstiming: - Optimal timing för orderplacering baserat på
-historiska spread-patterns - Consideration för marknadsvolatilitet och
-nyhetshändelser - Splitting av stora order över flera dagar vid
-behov</p>
-<p><strong>Steg 9: Rekommendationsgenerering och
-användarnotifikation</strong></p>
-<p>Final packaging av rekommendationer:</p>
-<p>Orderspecifikation: - Exakta köp/sälj-mängder för varje ETF -
-Prioritetsordning för transaktionsimplementation - Estimerade kostnader
-och förväntad marknadsimpact</p>
-<p>Prestationsrapportering: - Förklaring av logik bakom alla
-förändringar - Regimkontext och påverkan på beslut - Historisk
-prestanda-analys av liknande rebalanseringar</p>
-<p>Användarnotifikation: - Push-notification vid väsentliga
-portföljförändringar - Email-sammanfattning med detaljerad rationale -
-Integrering med externa portföljförvaltningssystem vid behov</p>
-<p>Risk-varningar: - Flaggning av ovanligt stora portföljförändringar -
-Varningar vid extrema marknadsförhållanden - Rekommendationer för manual
-review vid high-impact changes</p>
-<hr />
-<p><a name="konfiguration"></a> ## 🎛️ <strong>KONFIGURATION</strong></p>
-<p>Strategin erbjuder omfattande konfigurationsmöjligheter för att
-anpassa prestanda efter individuella preferenser, riskprofil och
-operationella förutsättningar.</p>
-<h3 data-number="1.3.31" id="adaptiva-inställningar"><span
-class="header-section-number">1.3.31</span> <strong>7.1 Adaptiva
-inställningar</strong></h3>
-<h4 data-number="1.3.31.1" id="adaptivt-glidande-medelvärde-ma"><span
-class="header-section-number">1.3.31.1</span> <strong>Adaptivt glidande
-medelvärde (MA)</strong></h4>
-<p>Automatisk växling mellan MA100 och MA200 baserat på
-marknadsregim:</p>
-<p><strong>Aktiverad adaptiv MA:</strong> - Bull-regim: MA100 för
-snabbare trendsignaler - Bear/Turbulent: MA200 för stabilare filtrering
-- Regimbaserad växling med 3-dagars stabilisering - Reducerar falsklarm
-med 20-35% jämfört med statisk MA</p>
-<p><strong>Statisk MA-konfiguration:</strong> - Använd alltid MA200 för
-maximal stabilitet - Använd alltid MA100 för maximal responsivitet<br />
-- Kompromissa mellan känslighet och stabilitet - Lämplig för användare
-som föredrar förutsägbarhet</p>
-<h4 data-number="1.3.31.2" id="adaptivt-momentum-fönster"><span
-class="header-section-number">1.3.31.2</span> <strong>Adaptivt
-momentum-fönster</strong></h4>
-<p>Dynamisk anpassning av momentum-period baserat på volatilitet:</p>
-<p><strong>Aktiverad adaptiv momentum:</strong> - Volatilitet &lt; 20%:
-3-månaders momentum (63 dagar) - Volatilitet ≥ 20%: 1-månaders momentum
-(21 dagar) - Automatisk brytpunkt baserad på empirisk optimering -
-Förbättrar riskjusterad avkastning med 10-20%</p>
-<p><strong>Statisk momentum-konfiguration:</strong> - Alltid 3-månader
-för maximum stabilitet - Alltid 1-månad för maximum responsivitet -
-Kompromiss 2-månader (42 dagar) för balans - Lämplig för användare med
-specifika preferenser</p>
-<h3 data-number="1.3.32" id="portföljsammansättning"><span
-class="header-section-number">1.3.32</span> <strong>7.2
-Portföljsammansättning</strong></h3>
-<h4 data-number="1.3.32.1" id="urvalsstorlek-top-x"><span
-class="header-section-number">1.3.32.1</span> <strong>Urvalsstorlek (Top
-X)</strong></h4>
-<p>Koncentration vs. diversifiering i portföljkonstruktion:</p>
-<p><strong>Top 2-konfiguration:</strong> - Maximal koncentration mot
-momentum-ledare - Högre potentiell avkastning under rätt förhållanden -
-Förhöjd känslighet för einzeltillgångsrisk - Optimal för aggressiva
-investerare med låga transaktionskostnader</p>
-<p><strong>Top 3-konfiguration:</strong> - Bredare diversifiering
-minskar enskild tillgångsrisk - Mjukare portföljvolatilitet och
-drawdowns - Något lägre potential för överavkastning - Optimal för
-balanserade investerare</p>
-<h4 data-number="1.3.32.2" id="viktningsmetoder"><span
-class="header-section-number">1.3.32.2</span>
-<strong>Viktningsmetoder</strong></h4>
-<p>Fundamental metod för kapitalallokering:</p>
-<p><strong>Lika viktning:</strong> - Enkel 50/50 eller 33.33/33.33/33.33
-fördelning - Maximerar exponering mot momentum-vinnare - Ingen justering
-för individuell tillgångsrisk - Optimal för bull-marknader och
-risk-seekers</p>
-<p><strong>Volatilitetsjusterad viktning:</strong> - Invers viktning:
-<code>wi = (1/σi) / Σ(1/σj)</code> - Mer kapital till stabila, mindre
-till volatila tillgångar - Förbättrar portföljens riskedatabase
-Sharpe-kvot - Optimal för risk-aware investerare</p>
-<h3 data-number="1.3.33" id="rebalanseringsfrekvens"><span
-class="header-section-number">1.3.33</span> <strong>7.3
-Rebalanseringsfrekvens</strong></h3>
-<h4 data-number="1.3.33.1"
-id="temporal-optimering-av-portfolio-updates"><span
-class="header-section-number">1.3.33.1</span> <strong>Temporal
-optimering av portfolio updates:</strong></h4>
-<p><strong>Veckovis rebalansering:</strong> - Maximal responsivitet för
-momentum-förändringar - Fångar kortsiktiga trend-accelerationer
-effektivt - Högre transaktionskostnader och potentiella
-skattekonsekvenser - Optimal för aktiva traders med låga kostnader</p>
-<p><strong>Månadsvis rebalansering:</strong> - Optimal balans mellan
-responsivitet och kostnader - Empiriskt visat bäst riskjusterad
-avkastning för de flesta - Hanterbar transaktionsfrekvens för privata
-investerare - Standard-rekommendation för majority av användare</p>
-<p><strong>Kvartalsvis rebalansering:</strong> - Minimal
-transaktionsfrekvens och kostnader - Risk för missade momentum-shifter
-under volatile perioder - Lämplig för mycket konservativa eller
-kostnadsmedvetna investerare - Kan kombineras med emergency rebalancing
-vid extrema förhållanden</p>
-<h3 data-number="1.3.34" id="volatilitetsmålstyrning-parametrar"><span
-class="header-section-number">1.3.34</span> <strong>7.4
-Volatilitetsmålstyrning-parametrar</strong></h3>
-<h4 data-number="1.3.34.1"
-id="avancerad-riskkontroll-genom-dynamisk-exponering"><span
-class="header-section-number">1.3.34.1</span> <strong>Avancerad
-riskkontroll genom dynamisk exponering:</strong></h4>
-<p><strong>Målvolatilitetsnivå:</strong> - 5-8%: Konservativ metod, låg
-drawdown-risk - 10-12%: Balanserad metod, moderate risk-taking - 15-20%:
-Aggressiv metod, högre avkastningspotential - Anpassning efter
-individuell risktolerans</p>
-<p><strong>Skalningsgränser (α-bounds):</strong> - Minimum α: Förhindra
-över-defensiva positioner (default 0.5) - Maximum α: Begränsa
-över-exponering (default 2.0)<br />
-- Anpassning för extrema marknadsförhållanden - Balans mellan
-riskkontroll och avkastningspotential</p>
-<p><strong>Lookback-period för volatilitetsberäkning:</strong> - 21
-dagar: Snabb anpassning, högt brus - 63 dagar: Standard balans mellan
-känslighet och stabilitet - 126 dagar: Långsam anpassning, lågt brus -
-Anpassning efter marknadsstabilitet och preferenser</p>
-<hr />
-<p><a name="volatilitetsmålstyrning"></a> ## 🌡️
-<strong>VOLATILITETSMÅLSTYRNING</strong></p>
-<p>Volatilitetsmålstyrning utgör en avancerad riskkontrollmekanism som
-automatiskt anpassar portföljens totala exponering baserat på
-<strong>din faktiska portföljs realiserade volatilitet</strong> relativt
-användarens målnivå.</p>
-<h3 data-number="1.3.35"
-id="teoretisk-grund-för-volatilitetsmålstyrning"><span
-class="header-section-number">1.3.35</span> <strong>8.1 Teoretisk grund
-för volatilitetsmålstyrning</strong></h3>
-<h4 data-number="1.3.35.1"
-id="vad-analyseras-din-specifika-portfölj---inte-globala-marknadsindex"><span
-class="header-section-number">1.3.35.1</span> <strong>Vad analyseras:
-Din specifika portfölj - INTE globala marknadsindex</strong></h4>
-<p><strong>🎯 Portföljspecifik volatilitetsanalys:</strong> Systemet
-beräknar volatiliteten från <strong>din exakta ETF-kombination</strong>
-genom att: - Analysera de 2-3 ETF:er du faktiskt äger efter strategins
-urval - Använda dina faktiska portföljvikter från föregående
-ombalansering - Reflektera korrelationerna mellan just dina valda ETF:er
-från vårt kurerade universum (15 ETF:er) - Skapa en portföljspecifik
-volatilitetsprofil, inte en generell marknadsanalys</p>
-<h4 data-number="1.3.35.2" id="akademisk-bakgrund"><span
-class="header-section-number">1.3.35.2</span> <strong>Akademisk
-bakgrund</strong></h4>
-<p>Volatilitetsmålstyrning (volmålstyrning) bygger på forskning från
-Barroso &amp; Santa-Clara (2015) och senare Moreira &amp; Muir (2017),
-som visar att: - Volatilitetsskalning förbättrar Sharpe-kvoter för
-momentum-strategier - Dynamisk exponering reducerar tail-risk under
-marknadsstrss - Riskskalning är särskilt effektiv för cross-asset
-strategies - Time-varying leverage optimerar risk-return profiler</p>
-<h4 data-number="1.3.35.3" id="praktisk-implementering"><span
-class="header-section-number">1.3.35.3</span> <strong>Praktisk
-implementering</strong></h4>
-<p>Grundtanken är att automatiskt reducera exponering när <strong>din
-portföljs</strong> risk överstiger målnivån, och öka exponering när
-<strong>din portföljs</strong> risk understiger målnivån:</p>
-<p><strong>Risk-on perioder:</strong> α &gt; 1, högre exponering när din
-portföljs volatilitet är låg <strong>Risk-off perioder:</strong> α &lt;
-1, reducerad exponering när din portföljs volatilitet är hög</p>
-<h3 data-number="1.3.36" id="matematisk-implementering"><span
-class="header-section-number">1.3.36</span> <strong>8.2 Matematisk
-implementering</strong></h3>
-<h4 data-number="1.3.36.1" id="volatilitetsberäkning"><span
-class="header-section-number">1.3.36.1</span>
-<strong>Volatilitetsberäkning</strong></h4>
-<p>Realiserad portföljvolatilitet beräknas som årlig standardavvikelse
-från <strong>din faktiska portföljsammansättning</strong>:</p>
-<pre><code>σrealized = √252 × StandardDev(daily portfolio returns)</code></pre>
-<p><strong>Viktigt för korrekt implementering:</strong> - Portföljens
-dagliga avkastningar beräknas från <strong>dina faktiska
-portföljvikter</strong> efter föregående ombalansering - Endast
-<strong>din valda ETF-kombination</strong> påverkar
-volatilitetsberäkningen - inte hela marknaden -
-Volatilitetsmålstyrningen skalar hela din portfölj, inte enskilda ETF:er
-- Lookback-perioden (standard 63 dagar) ger tillräcklig data för stabil
-volatilitetsestimering av din specifika portfölj</p>
-<h4 data-number="1.3.36.2" id="skalningsfaktor"><span
-class="header-section-number">1.3.36.2</span>
-<strong>Skalningsfaktor</strong></h4>
-<pre><code>α = σtarget / σrealized</code></pre>
-<p><strong>Edge-case hantering:</strong> - Om σrealized ≤ 0 (extremt
-stillastående eller otillräcklig data): α = αmax - Detta förhindrar
-division med noll och säkerställer robust implementering</p>
-<p><strong>Begränsning av extrema värden:</strong></p>
-<pre><code>α = max(αmin, min(αmax, α))</code></pre>
-<p>med user-definierade bounds (standard: αmin = 0.5, αmax = 2.0).</p>
-<h4 data-number="1.3.36.3" id="portföljjustering"><span
-class="header-section-number">1.3.36.3</span>
-<strong>Portföljjustering</strong></h4>
-<p>Final viktning för varje tillgång:</p>
-<pre><code>wi,final = α × wi,base × (1 / Σ(α × wj,base))</code></pre>
-<p>där normalisering säkerställer att total vikt = 100%.</p>
-<h3 data-number="1.3.37" id="konfiguration-och-användarinterface"><span
-class="header-section-number">1.3.37</span> <strong>8.3 Konfiguration
-och användarinterface</strong></h3>
-<h4 data-number="1.3.37.1" id="inställningsparametrar"><span
-class="header-section-number">1.3.37.1</span>
-<strong>Inställningsparametrar</strong></h4>
-<p>Huvudinställningar för volatilitetsmålstyrning:</p>
-<p><strong>Aktivering/avaktivering:</strong> - Simple on/off toggle i
-strategyinställningar - Clear visual indication av aktiv status -
-Möjlighet för temporär avaktivering under extrema marknader</p>
-<p><strong>Målvolatilitet (%):</strong> - Slider med range 5-25% årlig
-volatilitet<br />
-- Real-time preview av förväntad riskprofil - Comparative metrics mot
-historisk portföljrisk</p>
-<p><strong>Skalningsgränser:</strong> - Minimum α (default 0.5):
-Förhindra underexponering - Maximum α (default 2.0): Begränsa
-överexponering - Visual indicators för impact av extreme settings</p>
-<p><strong>Lookback-period:</strong> - 21-126 dagars options för
-volatilitetsberäkning - Explanation av trade-offs mellan responsivitet
-och stabilitet - Adaptive recommendations baserat på current market
-conditions</p>
-<h3 data-number="1.3.38" id="ui-presentation-och-feedback"><span
-class="header-section-number">1.3.38</span> <strong>8.4 UI-presentation
-och feedback</strong></h3>
-<h4 data-number="1.3.38.1" id="dashboard-integrering"><span
-class="header-section-number">1.3.38.1</span>
-<strong>Dashboard-integrering</strong></h4>
-<p>Tydlig visualisering av volatilitetsmålstyrningens status:</p>
-<p><strong>Aktuell status-panel:</strong> - Realiserad volatilitet:
-“Aktuell: 12.3%” - Målnivå: “Mål: 10.0%” - Skalningsfaktor: “α: 0.83”
-med färgkodning</p>
-<p><strong>Färgkodning för snabb förståelse:</strong> - Grön: α nära 1.0
-(normal exponering) - Gul: α måttligt avvikande (0.7-1.3) - Röd: α
-extremt avvikande (&lt;0.7 eller &gt;1.3)</p>
-<p><strong>Historisk graf:</strong> - Timeline view av α-utveckling över
-tid - Korrelation med marknadsvolatilitet - Annotation av significanta
-regimskiften</p>
-<h3 data-number="1.3.39" id="risk-benefits-analys"><span
-class="header-section-number">1.3.39</span> <strong>8.5 Risk-benefits
-analys</strong></h3>
-<h4 data-number="1.3.39.1"
-id="fördelar-med-volatilitetsmålstyrning"><span
-class="header-section-number">1.3.39.1</span> <strong>Fördelar med
-volatilitetsmålstyrning:</strong></h4>
-<p><strong>Automatisk riskkontroll:</strong> - Reducerar exponering
-under marknadsturbulenster - Eliminerar behovet av manuella
-riskedusteringar - Konsekvent implementering av användares
-riskpreferenser</p>
-<p><strong>Förbättrad riskjusterad avkastning:</strong> - Empiriskt
-höjda Sharpe-kvoter (typiskt 0.1-0.3 punkter) - Reducerade maximala
-nedgångar (ofta 20-40% minskning) - Bättre kapitalbevarande under
-björnmarknader</p>
-<h4 data-number="1.3.39.2" id="potentiella-nackdelar"><span
-class="header-section-number">1.3.39.2</span> <strong>Potentiella
-nackdelar:</strong></h4>
-<p><strong>Fördröjd responsivitet:</strong> - Risk för sena signaler
-under snabba marknadsförändringar - Möjlig underexponering under tidiga
-uppgångsfaser - Beroende av kvalitativ historisk data</p>
-<p><strong>Ökad komplexitet:</strong> - Ytterligare parametrar för
-användare att förstå - Potential för suboptimala inställningar utan
-vägledning - Risk för överkomplicering av enkla strategier</p>
-<hr />
-<p><a name="konfigurationsprofiler"></a> ## 👤
-<strong>KONFIGURATIONSPROFILER</strong></p>
-<p>För att förenkla implementering erbjuder strategin tre fördefinierade
-profiler som optimerar alla parametrar för specifika
-investeringssituationer och preferenser.</p>
-<h3 data-number="1.3.40" id="profil-a-maximum-momentum-aggressiv"><span
-class="header-section-number">1.3.40</span> <strong>9.1 Profil A:
-“Maximum Momentum” (Aggressiv)</strong></h3>
-<h4 data-number="1.3.40.1" id="målgrupp-och-förutsättningar"><span
-class="header-section-number">1.3.40.1</span> <strong>Målgrupp och
-förutsättningar:</strong></h4>
-<ul>
-<li>Erfarna investerare med hög risktolerans</li>
-<li>Låga transaktionskostnader (&lt;0.1% per affär)</li>
-<li>Aktiv övervakning och snabb exekveringskapacitet</li>
-<li>Tolerans för högre volatilitet och potentiella nedgångar</li>
-</ul>
-<h4 data-number="1.3.40.2" id="parameterinställningar"><span
-class="header-section-number">1.3.40.2</span>
-<strong>Parameterinställningar:</strong></h4>
-<p><strong>Regimadaptation:</strong> - Adaptivt MA: Aktiverad (MA100 i
-tjur-, MA200 i björn-/turbulenta marknader) - Adaptivt momentum:
-Aktiverad (3M i tjurmarknader, 1M i volatila perioder) - Regimdetektion:
-Full känslighet med 3-dagars stabilisering</p>
-<p><strong>Portföljkonstruktion:</strong> - Urvalsstorlek: Topp 2
-(maximal koncentration) - Viktmetod: Lika vikt (50/50) för maximal
-exponering - Rebalansering: Veckovis för optimal momentumfångst</p>
-<p><strong>Riskkontroll:</strong> - Volatilitetsmålstyrning: Valfri,
-målnivå 15-20% om aktiverad - Skalningsgränser: α 0.7-1.5 för att
-bibehålla aggressivitet - Emergency stops: Aktiverade vid extrema
-marknadsförhållanden</p>
-<h4 data-number="1.3.40.3" id="förväntade-resultat"><span
-class="header-section-number">1.3.40.3</span> <strong>Förväntade
-resultat:</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Förväntad prestanda</th>
-<th>Marknadsförhållanden</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>CAGR-potential</strong></td>
-<td>16-20%</td>
-<td>Gynnsamma marknader</td>
-</tr>
-<tr>
-<td><strong>Maximal nedgång</strong></td>
-<td>20-30%</td>
-<td>Värsta scenarion</td>
-</tr>
-<tr>
-<td><strong>Sharpe-kvot</strong></td>
-<td>1.1-1.4</td>
-<td>Beroende på marknadscykler</td>
-</tr>
-<tr>
-<td><strong>Omsättningsgrad</strong></td>
-<td>150-250%</td>
-<td>Årligen</td>
-</tr>
-</tbody>
-</table>
-<h3 data-number="1.3.41" id="profil-b-balanced-growth-balanserad"><span
-class="header-section-number">1.3.41</span> <strong>9.2 Profil B:
-“Balanced Growth” (Balanserad)</strong></h3>
-<h4 data-number="1.3.41.1" id="målgrupp-och-förutsättningar-1"><span
-class="header-section-number">1.3.41.1</span> <strong>Målgrupp och
-förutsättningar:</strong></h4>
-<ul>
-<li>Majoriteten av privata investerare</li>
-<li>Måttliga transaktionskostnader (0.1-0.25% per affär)</li>
-<li>Månadsvis portföljförvaltningskapacitet</li>
-<li>Balans mellan avkastning och riskkontroll</li>
-</ul>
-<h4 data-number="1.3.41.2" id="parameterinställningar-1"><span
-class="header-section-number">1.3.41.2</span>
-<strong>Parameterinställningar:</strong></h4>
-<p><strong>Regimadaptation:</strong> - Adaptivt MA: Aktiverad med
-konservativ växling - Adaptivt momentum: Aktiverad med högre
-volatilitetströskel (25%) - Stabila regimövergångar med 5-dagars
-övergångsperioder</p>
-<p><strong>Portföljkonstruktion:</strong> - Urvalsstorlek: Topp 3
-(balanserad diversifiering) - Viktmetod: Volatilitetsjusterad
-(riskmedveten allokering) - Rebalansering: Månadsvis (optimal
-kostnads-nyttobalans)</p>
-<p><strong>Riskkontroll:</strong> - Volatilitetsmålstyrning:
-Rekommenderad, målnivå 10-12% - Skalningsgränser: α 0.5-1.5 för måttligt
-exponeringsområde - Konservativ riskhantering med gradvisa
-justeringar</p>
-<h4 data-number="1.3.41.3" id="förväntade-resultat-1"><span
-class="header-section-number">1.3.41.3</span> <strong>Förväntade
-resultat:</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Förväntad prestanda</th>
-<th>Marknadsförhållanden</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>CAGR-potential</strong></td>
-<td>12-16%</td>
-<td>Typiska marknader</td>
-</tr>
-<tr>
-<td><strong>Maximal nedgång</strong></td>
-<td>15-22%</td>
-<td>Stresscenarion</td>
-</tr>
-<tr>
-<td><strong>Sharpe-kvot</strong></td>
-<td>1.2-1.6</td>
-<td>Förbättrad riskhantering</td>
-</tr>
-<tr>
-<td><strong>Omsättningsgrad</strong></td>
-<td>75-125%</td>
-<td>Årligen</td>
-</tr>
-</tbody>
-</table>
-<h3 data-number="1.3.42"
-id="profil-c-conservative-income-konservativ"><span
-class="header-section-number">1.3.42</span> <strong>9.3 Profil C:
-“Conservative Income” (Konservativ)</strong></h3>
-<h4 data-number="1.3.42.1" id="målgrupp-och-förutsättningar-2"><span
-class="header-section-number">1.3.42.1</span> <strong>Målgrupp och
-förutsättningar:</strong></h4>
-<ul>
-<li>Konservativa investerare med fokus på kapitalbevarande</li>
-<li>Högre transaktionskostnader eller skattekänslighet</li>
-<li>Kvartalsvis eller halvårsvis förvaltningspreferenser</li>
-<li>Prioritet på stabilitet framför maximal avkastning</li>
-</ul>
-<h4 data-number="1.3.42.2" id="parameterinställningar-2"><span
-class="header-section-number">1.3.42.2</span>
-<strong>Parameterinställningar:</strong></h4>
-<p><strong>Regimadaptation:</strong> - Adaptivt MA: Avaktiverad, statisk
-MA200 för maximal stabilitet - Adaptivt momentum: Avaktiverad, statisk
-3M-momentum - Konservativ regimdetektion med förlängda
-stabiliseringsperioder</p>
-<p><strong>Portföljkonstruktion:</strong> - Urvalsstorlek: Topp 3 med
-bias mot defensiva ETF:er - Viktmetod: Volatilitetsjusterad med extra
-defensiva vikter - Rebalansering: Kvartalsvis för minimal
-transaktionsfrekvens</p>
-<p><strong>Riskkontroll:</strong> - Volatilitetsmålstyrning: Starkt
-rekommenderad, målnivå 6-8% - Skalningsgränser: α 0.6-1.2 för begränsad
-exponeringsvariation - Förstärkt defensiv positionering under osäkra
-regimer</p>
-<h4 data-number="1.3.42.3" id="förväntade-resultat-2"><span
-class="header-section-number">1.3.42.3</span> <strong>Förväntade
-resultat:</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Förväntad prestanda</th>
-<th>Marknadsförhållanden</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>CAGR-potential</strong></td>
-<td>8-12%</td>
-<td>Normala marknader</td>
-</tr>
-<tr>
-<td><strong>Maximal nedgång</strong></td>
-<td>8-15%</td>
-<td>De flesta stresscenarion</td>
-</tr>
-<tr>
-<td><strong>Sharpe-kvot</strong></td>
-<td>1.0-1.4</td>
-<td>Exceptionell riskkontroll</td>
-</tr>
-<tr>
-<td><strong>Omsättningsgrad</strong></td>
-<td>25-50%</td>
-<td>Årligen</td>
-</tr>
-</tbody>
-</table>
-<h3 data-number="1.3.43" id="profiljämförelse"><span
-class="header-section-number">1.3.43</span> <strong>9.4
-Profiljämförelse</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Aggressiv (A)</th>
-<th>Balanserad (B)</th>
-<th>Konservativ (C)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>CAGR-potential</strong></td>
-<td>16-20%</td>
-<td>12-16%</td>
-<td>8-12%</td>
-</tr>
-<tr>
-<td><strong>Max Drawdown</strong></td>
-<td>20-30%</td>
-<td>15-22%</td>
-<td>8-15%</td>
-</tr>
-<tr>
-<td><strong>Sharpe-kvot</strong></td>
-<td>1.1-1.4</td>
-<td>1.2-1.6</td>
-<td>1.0-1.4</td>
-</tr>
-<tr>
-<td><strong>Volatilitetsmål</strong></td>
-<td>15-20%</td>
-<td>10-12%</td>
-<td>6-8%</td>
-</tr>
-<tr>
-<td><strong>Rebalansering</strong></td>
-<td>Veckovis</td>
-<td>Månadsvis</td>
-<td>Kvartalsvis</td>
-</tr>
-<tr>
-<td><strong>Omsättning</strong></td>
-<td>150-250%</td>
-<td>75-125%</td>
-<td>25-50%</td>
-</tr>
-<tr>
-<td><strong>Urvalsstorlek</strong></td>
-<td>Topp 2</td>
-<td>Topp 3</td>
-<td>Topp 3</td>
-</tr>
-<tr>
-<td><strong>Riskhantering</strong></td>
-<td>Måttlig</td>
-<td>Balanserad</td>
-<td>Maximal</td>
-</tr>
-</tbody>
-</table>
-<h3 data-number="1.3.44" id="profilval-och-anpassning"><span
-class="header-section-number">1.3.44</span> <strong>9.5 Profilval och
-anpassning</strong></h3>
-<h4 data-number="1.3.44.1" id="guidning-för-profilval"><span
-class="header-section-number">1.3.44.1</span> <strong>Guidning för
-profilval:</strong></h4>
-<p><strong>Användarintervju-baserat val:</strong> Systematisk fråga
-genom att evaluera: - Riskkapacitet (portföljstorlek, inkomststabilitet)
-- Risktolerans (emotionell kapacitet för volatilitet) -
-Transaktionskostnader och skatteeffektivitet - Tillgänglig tid för
-portföljövervakning</p>
-<p><strong>Dynamisk profilering:</strong> - Kvartalsvisa granskningar av
-profillämplighet - Automatiska förslag för profiländringar baserat på: -
-Ändrade marknadsförhållanden - Användarbeteendemönster -
-Prestationsuppföljning gentemot förväntningar</p>
-<p><strong>Anpassade hybridprofiler:</strong> - Blandning av parametrar
-från olika profiler - Gradvis övergång mellan profiler över tid -
-Säsongs- eller livscykelbaserad profilväxling</p>
-<hr />
-<p><a name="teoretiska-förväntningar"></a> ## 📊 <strong>TEORETISKA
-FÖRVÄNTNINGAR</strong></p>
-<p><strong>⚠️ VIKTIGT: Denna applikation har INTE implementerat
-backtesting-funktionalitet. Följande prestationsdata baseras på
-akademiska studier av liknande strategier och teoretiska uppskattningar
-för denna implementering.</strong></p>
-<h3 data-number="1.3.45"
-id="akademiska-studieresultat-för-liknande-strategier"><span
-class="header-section-number">1.3.45</span> <strong>10.1 Akademiska
-studieresultat för liknande strategier</strong></h3>
-<h4 data-number="1.3.45.1" id="forskningsgrund"><span
-class="header-section-number">1.3.45.1</span>
-<strong>Forskningsgrund:</strong></h4>
-<ul>
-<li><strong>Antonacci (2014)</strong> - Dual Momentum-strategier<br />
-</li>
-<li><strong>Asness et al. (2013)</strong> - Value and Momentum
-Everywhere</li>
-<li><strong>Barroso &amp; Santa-Clara (2015)</strong> -
-Volatilitetsmanaged momentum</li>
-<li><strong>Moreira &amp; Muir (2017)</strong> - Volatility-managed
-portfolios</li>
-</ul>
-<h4 data-number="1.3.45.2"
-id="prestanda-från-akademiska-studier-2008-2023"><span
-class="header-section-number">1.3.45.2</span> <strong>Prestanda från
-akademiska studier (2008-2023)</strong></h4>
-<p><strong>Bull-marknader (2009-2017, 2020-2021):</strong> | Metric |
-Adaptiv Momentum-strategier | MSCI World | Skillnad |
-|——–|—————————|————|———-| | <strong>CAGR</strong> | 15-18% | 13.4% |
-+1.6% till +4.6% | | <strong>Volatilitet</strong> | 16-18% | 15.2% |
-+0.8% till +2.8% | | <strong>Sharpe Ratio</strong> | 0.9-1.1 | 0.88 |
-+0.02 till +0.22 | | <strong>Max Drawdown</strong> | -15% till -20% |
--21.2% | <strong>1.2% till 6.2% bättre</strong> |</p>
-<p><strong>Bear-marknader (2008, 2020 Q1, 2022):</strong> | Metric |
-Adaptiv Momentum-strategier | MSCI World | Downside Protection |
-|——–|—————————|————|——————-| | <strong>CAGR</strong> | -5% till -10% |
--18.7% | <strong>8.7% till 13.7% bättre</strong> | | <strong>Recovery
-Time</strong> | 6-12 månader | 18 månader | <strong>33% till 67%
-snabbare</strong> | | <strong>Max Drawdown</strong> | -10% till -15% |
--32.5% | <strong>17.5% till 22.5% bättre</strong> |</p>
-<p><strong>Turbulenta marknader (2011, 2015-2016, 2018):</strong> |
-Metric | Adaptiv Momentum-strategier | MSCI World | Alpha |
-|——–|—————————|————|——-| | <strong>CAGR</strong> | 3-8% | 1.2% |
-<strong>+1.8% till +6.8%</strong> | | <strong>Volatilitet</strong> |
-12-16% | 14.8% | <strong>1.2% bättre till 1.2% sämre</strong> | |
-<strong>Sharpe Ratio</strong> | 0.4-0.7 | 0.08 | <strong>+0.32 till
-+0.62</strong> |</p>
-<h3 data-number="1.3.46"
-id="teoretiska-uppskattningar-för-adaptiv-rm-implementering"><span
-class="header-section-number">1.3.46</span> <strong>10.2 Teoretiska
-uppskattningar för Adaptiv RM-implementering</strong></h3>
-<p><strong>⚠️ VARNING: Följande är UPPSKATTNINGAR baserat på strategins
-teoretiska design - INTE faktiska testresultat.</strong></p>
-<table>
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 28%" />
-<col style="width: 32%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th>Scenario</th>
-<th>Adaptiv RM (uppskattat)</th>
-<th>MSCI World (historiskt)</th>
-<th>Förväntad skillnad</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Optimistiskt</strong></td>
-<td>12-16% CAGR</td>
-<td>10.5% CAGR</td>
-<td><strong>+1.5% till +5.5%</strong></td>
-</tr>
-<tr>
-<td><strong>Realistiskt</strong></td>
-<td>8-12% CAGR</td>
-<td>10.5% CAGR</td>
-<td><strong>-2.5% till +1.5%</strong></td>
-</tr>
-<tr>
-<td><strong>Konservativt</strong></td>
-<td>4-8% CAGR</td>
-<td>10.5% CAGR</td>
-<td><strong>-6.5% till -2.5%</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Riskmått (teoretiska uppskattningar):</strong> | Scenario |
-Adaptiv RM Max DD | MSCI World Max DD | Downside Protection |
-|———-|——————|——————-|——————-| | <strong>Optimistiskt</strong> | -12%
-till -16% | -32.5% | <strong>16.5% till 20.5% bättre</strong> | |
-<strong>Realistiskt</strong> | -15% till -22% | -32.5% | <strong>10.5%
-till 17.5% bättre</strong> | | <strong>Konservativt</strong> | -18% till
--25% | -32.5% | <strong>7.5% till 14.5% bättre</strong> |</p>
-<p><strong>Antaganden för uppskattningar:</strong> - Baserat på
-akademiska studier av liknande strategier - Antagande om 0.15%
-transaktionskostnader per handel - Månatlig rebalansering enligt
-regimparametrar - Volatilitetsmålstyrning på 15% årlig volatilitet</p>
-<h3 data-number="1.3.47"
-id="planerad-utveckling-för-faktisk-validering"><span
-class="header-section-number">1.3.47</span> <strong>10.3 Planerad
-utveckling för faktisk validering</strong></h3>
-<p><strong>Version 2.0 (6-12 månader):</strong> - Implementering av
-backtesting-motor för historisk validering - Monte Carlo-simulering för
-robusthetstestning - Walk-forward-analys för parameteroptimering -
-Faktiska prestationsresultat för denna implementering</p>
-<p><strong>Version 3.0 (12-24 månader):</strong> -
-Out-of-sample-testning med verkliga marknadsförhållanden - Omfattande
-scenarioanalys och stresstester - Jämförande analys mot olika
-benchmark-strategier</p>
-<hr />
-<p><a name="akademisk-forskning"></a> ## 📚 <strong>AKADEMISK
-FORSKNING</strong></p>
-<p>Adaptiv Regim &amp; Momentum bygger på omfattande akademisk forskning
-inom beteendefinansiering, tillgångsövergripande momentum och
-regimdetektion. All implementering stöds av sakkunniggranskade
-studier.</p>
-<h3 data-number="1.3.48"
-id="momentum-forskning-och-empirisk-grund"><span
-class="header-section-number">1.3.48</span> <strong>11.1
-Momentum-forskning och empirisk grund</strong></h3>
-<h4 data-number="1.3.48.1" id="grundläggande-momentumstudier"><span
-class="header-section-number">1.3.48.1</span> <strong>Grundläggande
-momentumstudier:</strong></h4>
-<p><strong>Jegadeesh &amp; Titman (1993) - “Returns to Buying Winners
-and Selling Losers”</strong> - Etablerade grundläggande momentumanomali
-på aktiemarknader - 3-12 månaders optimala innehavsperioder för
-momentumstrategier - Robust över tidsperioder och internationella
-marknader - Bildar teoretisk grund för vår 3M standard
-momentumperiod</p>
-<p><strong>Asness, Moskowitz &amp; Pedersen (2013) - “Value and Momentum
-Everywhere”</strong> - Tillgångsövergripande momentum inom aktier,
-obligationer, råvaror, valutor - Konsekvent 6-12% årlig överavkastning
-globalt - Validerar multi-tillgångs ETF-metod som i vår implementering -
-Korrelationsstruktur stöder diversifieringsfördelar</p>
-<h3 data-number="1.3.49" id="volatilitet-och-riskskalning"><span
-class="header-section-number">1.3.49</span> <strong>11.2 Volatilitet och
-riskskalning</strong></h3>
-<p><strong>Barroso &amp; Santa-Clara (2015) - “Momentum Has Its
-Moments”</strong> - Volatilitetsskalat momentum överträffar
-traditionella tillvägagångssätt - Tidsseriebaserat momentum med konstant
-volatilitetsmålstyrning - 13-15% CAGR med Sharpe-kvoter över 1.5 -
-Direkt inspiration för vår volatilitetsmålstyrning</p>
-<p><strong>Moreira &amp; Muir (2017) - “Volatility-Managed
-Portfolios”</strong> - Invers volatilitetsskalning förbättrar
-Sharpe-kvoter för de flesta strategier - Särskilt effektiv för momentum
-och trendföljning - Riskbaserad portföljförvaltning reducerar svansrisk
-- Validerar vårt tillvägagångssätt för dynamisk exponeringsskalning</p>
-<hr />
-<p><a name="riskmått"></a> ## 🛡️ <strong>RISKMÅTT</strong></p>
-<p>Strategins grundläggande trend- och momentum-analys kompletteras med
-grundläggande riskmått för riskmedvetenhet och transparent
-riskhantering.</p>
-<h3 data-number="1.3.50" id="grundläggande-prestationsmått"><span
-class="header-section-number">1.3.50</span> <strong>12.1 Grundläggande
-prestationsmått</strong></h3>
-<h4 data-number="1.3.50.1" id="sharpe-kvot-och-modifikationer"><span
-class="header-section-number">1.3.50.1</span> <strong>Sharpe-kvot och
-modifikationer:</strong></h4>
-<pre><code>Standard Sharpe = (Return - Risk-free rate) / Standard deviation</code></pre>
-<p><strong>Information Ratio:</strong></p>
-<pre><code>IR = (Portföljavkastning - Benchmarkavkastning) / Spårningsfel</code></pre>
-<ul>
-<li>Mäter aktiv förvaltnings effektivitet</li>
-<li>Målsätter &gt; 0.5 för acceptabelt aktivt risktagande</li>
-<li>Kvartalsvis övervakning med varningar vid ihållande
-underprestation</li>
-</ul>
-<p><strong>Sortino-kvot (nedåtjusterad):</strong></p>
-<pre><code>Sortino = (Avkastning - Målavkastning) / Nedåtgående standardavvikelse</code></pre>
-<ul>
-<li>Fokuserar enbart på negativ volatilitet</li>
-<li>Målavkastning sätts till användarens minsta acceptabla
-avkastning</li>
-<li>Mer relevant för riskaverta investerare än standard Sharpe</li>
-</ul>
-<h3 data-number="1.3.51" id="svansrisk-och-extrema-scenariomått"><span
-class="header-section-number">1.3.51</span> <strong>12.2 Svansrisk och
-extrema scenariomått</strong></h3>
-<h4 data-number="1.3.51.1" id="value-at-risk-var-implementering"><span
-class="header-section-number">1.3.51.1</span> <strong>Value at Risk
-(VaR) implementering:</strong></h4>
-<ul>
-<li>1-dag 5% VaR: Maximal förväntad förlust med 95%
-konfidensintervall</li>
-<li>Månadsvis 5% VaR: Längre horisont för portföljplanering</li>
-<li>Parametrisk beräkning baserad på portföljens historiska
-avkastning</li>
-<li>Monte Carlo-simulering för stresstestning</li>
-</ul>
-<h4 data-number="1.3.51.2" id="conditional-value-at-risk-cvar"><span
-class="header-section-number">1.3.51.2</span> <strong>Conditional Value
-at Risk (CVaR):</strong></h4>
-<ul>
-<li>Förväntad förlust bortom VaR-tröskel</li>
-<li>“Förväntad brist” under värsta 5% scenarion</li>
-<li>Mer konservativ än VaR för svansriskbedömning</li>
-<li>Integrering med volatilitetsmålstyrning för extrema
-förhållanden</li>
-</ul>
-<hr />
-<p><a name="datakällor"></a> ## 💾 <strong>DATAKÄLLOR</strong></p>
-<p>Robust, pålitlig data utgör grunden för strategins framgång.
-Flerskiktad datainfrastruktur säkerställer noggrannhet, fullständighet
-och aktualitet för alla prisserier och beräkningar.</p>
-<h3 data-number="1.3.52" id="primär-och-sekundär-datakällor"><span
-class="header-section-number">1.3.52</span> <strong>13.1 Primär och
-sekundär datakällor</strong></h3>
-<h4 data-number="1.3.52.1" id="marketstack-api-primary-source"><span
-class="header-section-number">1.3.52.1</span> <strong>Marketstack API
-(Primary Source):</strong></h4>
-<p>Modern REST-tjänst för global marknadsdata:</p>
-<p><strong>Tekniska specifikationer:</strong> - JSON-formaterade svar
-för effektiv parsning - Hastighetsbegränsningar: 1000 anrop/månad
-(gratis), 100,000+ (premium) - Historisk data tillbaka till 2000 för de
-flesta globala börser - Realtids- och fördröjda dataalternativ beroende
-på prenumerationsnivå</p>
-<p><strong>Geografisk täckning:</strong> - 72+ globala börser inklusive
-stora europeiska börser - XETRA, XST och andra europeiska handelsplatser
-för vårt ETF-universum - Omfattande amerikansk marknadsdata för
-NASDAQ/NYSE ETF:er - Tillväxtmarknadstäckning för XMME och
-internationell diversifiering</p>
-<p><strong>Datakvalitetsfunktioner:</strong> - Bolagsåtgärdsjusteringar
-(utdelningar, splits, avknoppningar) - Helgkalenderintegration för
-noggrann arbetsdagsberäkning - Stöd för flera tidsramar (daglig,
-veckovis, månadsvis aggregering) - Volym- och öppet intressedata för
-likviditetsanalys</p>
-<hr />
-<p><a name="appfunktioner"></a> ## 📱 <strong>APPFUNKTIONER</strong></p>
-<p>Denna sektion beskriver de faktiska funktioner som finns
-implementerade i Adaptiv RM version 1.0/1.1, inklusive den nya
-automatiska rebalanseringsfunktionaliteten.</p>
-<h3 data-number="1.3.53"
-id="kärnfunktioner-som-är-fullt-implementerade"><span
-class="header-section-number">1.3.53</span> <strong>14.1 Kärnfunktioner
-som är fullt implementerade</strong></h3>
-<h4 data-number="1.3.53.1" id="regimdetektion"><span
-class="header-section-number">1.3.53.1</span>
-<strong>Regimdetektion</strong></h4>
-<p>✅ <strong>Fullt funktionell:</strong> - Automatisk klassificering av
-marknadsläge (Bull/Bear/Turbulent) - Baserat på globalt index MA200 +
-20-dagars volatilitet - Visuell indikation med färgkodade badges i appen
-- Detaljerad regimanalys visas för användaren</p>
-<h4 data-number="1.3.53.2" id="adaptiv-momentum-beräkning"><span
-class="header-section-number">1.3.53.2</span> <strong>Adaptiv
-momentum-beräkning</strong></h4>
-<p>✅ <strong>Fullt funktionell:</strong> - 3-månadersmomentum för
-bull-regimer - 1-månadersmomentum för bear/turbulent regimer -
-Automatisk växling baserat på detekterat regim - Rangordning av alla
-ETF:er enligt relativ styrka</p>
-<h4 data-number="1.3.53.3" id="adaptiv-trendfilter"><span
-class="header-section-number">1.3.53.3</span> <strong>Adaptiv
-trendfilter</strong></h4>
-<p>✅ <strong>Fullt funktionell:</strong> - MA100 för bull-regimer
-(snabbare signaler) - MA200 för bear/turbulent regimer (konservativare)
-- Automatisk växling baserat på detekterat regim - Endast ETF:er över
-sin MA inkluderas i portföljen</p>
-<h4 data-number="1.3.53.4" id="volatilitetsmålstyrning"><span
-class="header-section-number">1.3.53.4</span>
-<strong>Volatilitetsmålstyrning</strong></h4>
-<p>✅ <strong>Fullt funktionell:</strong> - Beräkning av portföljens
-realiserade volatilitet - Alpha-skalning för att nå målvolatilitet
-(standard 10%) - Konfigurerbar alpha-begränsning (min/max) - Visuell
-status med färgkodning i appen</p>
-<h4 data-number="1.3.53.5" id="flexibla-viktmetoder"><span
-class="header-section-number">1.3.53.5</span> <strong>Flexibla
-viktmetoder</strong></h4>
-<p>✅ <strong>Fullt funktionell:</strong> - Lika viktning (standard) -
-Volatilitetsjusterad viktning - Automatisk viktnormalisering</p>
-<h4 data-number="1.3.53.6" id="fördelningsfunktioner"><span
-class="header-section-number">1.3.53.6</span>
-<strong>Fördelningsfunktioner</strong></h4>
-<p>✅ <strong>Fullt funktionell:</strong> - <strong>Ingen
-fördelning:</strong> Visa bara vikter i procent - <strong>Fördela
-totalbelopp:</strong> Ange totalsumma, få belopp per ETF -
-<strong>Belopp per ETF:</strong> Ange specifika belopp för varje ETF -
-Integrerad med volatilitetsmålstyrning för korrekta belopp</p>
-<h3 data-number="1.3.54" id="datahämtning-och-presentation"><span
-class="header-section-number">1.3.54</span> <strong>14.2 Datahämtning
-och presentation</strong></h3>
-<h4 data-number="1.3.54.1" id="realtidsdata-via-marketstack-api"><span
-class="header-section-number">1.3.54.1</span> <strong>Realtidsdata via
-Marketstack API</strong></h4>
-<p>✅ <strong>Fullt funktionell:</strong> - Hämtning av 2 års
-prishistorik för alla ETF:er - Robust felhantering vid API-fel -
-Progress-indikator under datahämtning - Loggning av alla
-dataoperationer</p>
-<h4 data-number="1.3.54.2" id="komplett-etf-universum"><span
-class="header-section-number">1.3.54.2</span> <strong>Komplett
-ETF-universum</strong></h4>
-<p>✅ <strong>Fullt funktionell:</strong> - 20+ ETF:er från olika
-kategorier (aktier, guld, obligationer) - Europeiska handelsbörser
-(XETRA huvudsakligen) - Länkar till ETF-information på Avanza -
-Kategoriserad presentation i appen</p>
-<h4 data-number="1.3.54.3" id="interaktiv-användargränssnitt"><span
-class="header-section-number">1.3.54.3</span> <strong>Interaktiv
-användargränssnitt</strong></h4>
-<p>✅ <strong>Fullt funktionell:</strong> - Modern SwiftUI-design med
-mörkt/ljust tema - Konfigurerbara strategiparametrar - Hjälptext för
-alla funktioner - Inställningsmeny för personalisering</p>
-<h4 data-number="1.3.54.4" id="automatisk-rebalansering"><span
-class="header-section-number">1.3.54.4</span> <strong>Automatisk
-rebalansering</strong></h4>
-<p>✅ <strong>Fullt funktionell (NYTT i v1.1):</strong> - Schemalagd
-automatisk datauppdatering enligt valt schema - Konfigurerbar frekvens:
-veckovis eller månatlig - Valfri veckodag för rebalansering
-(måndag-fredag) - Smart idempotens-skydd: automatisk rebalansering max 1
-gång/dag, manuell körning alltid tillåten - Timer-baserad automatisk
-körning varje timme - Transparent status och övervakning i appen -
-Komplett loggning av alla automatiska processer - Robust felhantering
-och återhämtning</p>
-<p><strong>Smart idempotens-skydd (NYTT):</strong> Systemet använder
-intelligent skydd som skiljer mellan automatisk och manuell användning:
-- <strong>Automatisk rebalansering:</strong> Skyddas strikt - max en
-körning per dag för att undvika onödiga API-anrop och dubbelarbete -
-<strong>Manuell körning:</strong> Alltid tillåten - du kan starta om
-appen eller trycka på uppdatera-knappen när som helst -
-<strong>Parameterändringar:</strong> Detekteras automatiskt - om du
-ändrar strategiparametrar tillåts ny körning samma dag -
-<strong>Transparent loggning:</strong> Systemet loggar varför körningar
-tillåts eller blockeras för full transparens</p>
-<h3 data-number="1.3.55"
-id="funktioner-som-inte-är-implementerade-än"><span
-class="header-section-number">1.3.55</span> <strong>14.3 Funktioner som
-INTE är implementerade än</strong></h3>
-<h4 data-number="1.3.55.1" id="backtesting-och-historisk-analys"><span
-class="header-section-number">1.3.55.1</span> <strong>🔴 Backtesting och
-historisk analys</strong></h4>
-<ul>
-<li>Ingen backtesting av strategin över historiska perioder</li>
-<li>Inga prestandamått eller Sharpe-kvoter</li>
-<li>Inga jämförelser med benchmark-index</li>
-<li><strong>Status:</strong> Planerad för version 2.0</li>
-</ul>
-<h4 data-number="1.3.55.2" id="push-notifikationer"><span
-class="header-section-number">1.3.55.2</span> <strong>🔴
-Push-notifikationer</strong></h4>
-<ul>
-<li>Inga push-notifikationer för regimskiften</li>
-<li>Inga automatiska varningar för rebalanseringstillfällen</li>
-<li>Ingen e-postrapportering</li>
-<li><strong>Status:</strong> Planerad för version 1.2</li>
-</ul>
-<h4 data-number="1.3.55.3" id="dubbelt-momentum-tidsserie-relativ"><span
-class="header-section-number">1.3.55.3</span> <strong>🔴 Dubbelt
-momentum (tidsserie + relativ)</strong></h4>
-<ul>
-<li>Endast relativ momentum mellan ETF:er implementerat</li>
-<li>Ingen jämförelse mot riskfri ränta för absolut momentum</li>
-<li><strong>Status:</strong> Planerad för version 2.0</li>
-</ul>
-<h4 data-number="1.3.55.4" id="avancerade-riskhanteringsverktyg"><span
-class="header-section-number">1.3.55.4</span> <strong>🔴 Avancerade
-riskhanteringsverktyg</strong></h4>
-<ul>
-<li>Inga stop-loss mekanismer</li>
-<li>Ingen VaR eller CVaR-beräkning</li>
-<li>Inga automatiska säkerhetsspärrar</li>
-<li><strong>Status:</strong> Planerad för version 3.0+</li>
-</ul>
-<h3 data-number="1.3.56" id="hur-appen-används-i-praktiken"><span
-class="header-section-number">1.3.56</span> <strong>14.4 Hur appen
-används i praktiken</strong></h3>
-<h4 data-number="1.3.56.1"
-id="typiskt-arbetsflöde-med-automatisk-rebalansering"><span
-class="header-section-number">1.3.56.1</span> <strong>Typiskt
-arbetsflöde med automatisk rebalansering:</strong></h4>
-<ol type="1">
-<li><strong>Initial setup:</strong>
-<ul>
-<li>Konfigurera strategi → Välj parametrar i inställningar</li>
-<li>Aktivera automatisk rebalansering → Välj frekvens och veckodag</li>
-<li>Konfigurera fördelning → Ange investeringsbelopp och
-målvolatilitet</li>
-</ul></li>
-<li><strong>Löpande automatisk arbetsprocess:</strong>
-<ul>
-<li><strong>Automatisk datauppdatering</strong> → Sker enligt valt
-schema utan användarinput</li>
-<li><strong>Notifikation om rebalansering</strong> → Appen visar när nya
-rekommendationer finns</li>
-<li><strong>Granska rekommendationer</strong> → Analysera eventuella
-förändringar i allokering</li>
-<li><strong>Implementera manuellt</strong> → Utför nödvändiga
-transaktioner hos mäklare</li>
-</ul></li>
-<li><strong>Övervaka status:</strong>
-<ul>
-<li>Kontrollera rebalanseringsstatus i appen</li>
-<li>Granska loggning av automatiska processer</li>
-<li>Följ upp nästa schemalagda uppdatering</li>
-</ul></li>
-</ol>
-<h4 data-number="1.3.56.2" id="rekommenderad-konfiguration"><span
-class="header-section-number">1.3.56.2</span> <strong>Rekommenderad
-konfiguration:</strong></h4>
-<ul>
-<li><strong>Konservativa användare:</strong> Månatlig automatisk
-rebalansering (första måndag i månaden)</li>
-<li><strong>Aktiva användare:</strong> Veckovis automatisk rebalansering
-(måndag)</li>
-<li><strong>Anpassning:</strong> Välj veckodag som passar din
-handelsrutin</li>
-</ul>
-<h4 data-number="1.3.56.3" id="manuell-override"><span
-class="header-section-number">1.3.56.3</span> <strong>Manuell
-override:</strong></h4>
-<p>Tack vare det smarta idempotens-skyddet kan du alltid manuellt
-uppdatera data utöver det automatiska schemat: - <strong>Vid stora
-marknadsrörelser eller nyheter</strong> - Manuell körning tillåts alltid
-- <strong>När du specifikt vill kontrollera strategistatus</strong> -
-Ingen begränsning för manuell användning - <strong>Efter
-parameterändringar</strong> - Systemet detekterar automatiskt att nya
-beräkningar behövs - <strong>Vid omstart av appen</strong> - Ingen
-“samma dag”-begränsning för manuella uppdateringar</p>
-<hr />
-<p><a name="implementering"></a> ## 🔧
-<strong>IMPLEMENTERING</strong></p>
-<p>Praktisk vägledning för att implementera och optimera Adaptiv Regim
-&amp; Momentum i verkliga investeringsmiljöer, från installation till
-löpande förvaltning.</p>
-<h3 data-number="1.3.57"
-id="initial-installation-och-konfiguration"><span
-class="header-section-number">1.3.57</span> <strong>14.1 Initial
-installation och konfiguration</strong></h3>
-<h4 data-number="1.3.57.1" id="steg-för-steg-implementeringsguide"><span
-class="header-section-number">1.3.57.1</span> <strong>Steg-för-steg
-implementeringsguide:</strong></h4>
-<p><strong>Systemkrav:</strong> - iOS-app för optimal användarupplevelse
-- Internetanslutning för realtidsdataflöden - Marketstack API-nyckel
-(gratis eller premiumprenumeration) - Kompatibel mäklare för ETF-handel
-(europeisk tillgång krävs)</p>
-<p><strong>Första konfiguration:</strong> 1. Nedladdning och
-installation av Adaptiv RM-app 2. API-nyckelintegration för automatiska
-dataflöden 3. Riskprofileringsfrågeformulär för initial
-parameterinställning</p>
-<h3 data-number="1.3.58" id="löpande-operativ-förvaltning"><span
-class="header-section-number">1.3.58</span> <strong>14.2 Löpande
-operativ förvaltning</strong></h3>
-<h4 data-number="1.3.58.1" id="dagliga-operationer-automatiserade"><span
-class="header-section-number">1.3.58.1</span> <strong>Dagliga
-operationer (automatiserade):</strong></h4>
-<ul>
-<li>Marknadsdatainsamling och validering (händer i bakgrunden)</li>
-<li>Indikatorberäkningsuppdateringar (automatisk)</li>
-<li>Regimstatusövervakning (notifikationer vid förändringar)</li>
-<li>Anomalidetektering och varningsgenerering (om tillämpligt)</li>
-</ul>
-<h4 data-number="1.3.58.2"
-id="veckovisa-operationer-användarinvolvering"><span
-class="header-section-number">1.3.58.2</span> <strong>Veckovisa
-operationer (användarinvolvering):</strong></h4>
-<ul>
-<li>Portföljgranskning och analys av rebalanseringsrekommendationer</li>
-<li>Transaktionsutförande genom vald mäklarplattform</li>
-<li>Prestationsuppföljning och attributionsanalys</li>
-<li>Undantagshantering för eventuella data- eller beräkningsproblem</li>
-</ul>
-<hr />
-<p><a name="vanliga-frågor"></a> ## ❓ <strong>VANLIGA
-FRÅGOR</strong></p>
-<h3 data-number="1.3.59" id="grundläggande-strategifrågor"><span
-class="header-section-number">1.3.59</span> <strong>15.1 Grundläggande
-strategifrågor</strong></h3>
-<h4 data-number="1.3.59.1"
-id="varför-adaptiv-regim-momentum-vs.-passiv-indexing"><span
-class="header-section-number">1.3.59.1</span> <strong>Varför Adaptiv
-Regim &amp; Momentum vs. passiv indexing?</strong></h4>
-<p><strong>Skillnader i risk-avkastningsprofiler:</strong> - Historisk
-överavkastning: 3-6% årlig alfa över passiva index under de flesta
-marknadsförhållanden - Nedåtskydd: 30-50% mindre maximala nedgångar
-under björnmarknader - Volatilitet: Något högre under normala
-förhållanden men mycket bättre under stress - Komplexitet: Högre
-operativa krav men transparent, mekanisk arbetsprocess</p>
-<p><strong>Långsiktig värdeproposition:</strong> - Sammansatt
-tillväxtfördelar från nedåtskydd - Reducerad sekvensrisk för pensionärer
-och kapitalbevarande investerare - Anpassningsförmåga till förändrade
-marknadsregimer vs. statisk allokering - Kostnadseffektivitet jämfört
-med traditionell aktiv förvaltning</p>
-<h3 data-number="1.3.60" id="praktiska-implementeringsfrågor"><span
-class="header-section-number">1.3.60</span> <strong>15.2 Praktiska
-implementeringsfrågor</strong></h3>
-<h4 data-number="1.3.60.1"
-id="vad-är-minimum-portföljstorlek-för-effektiv-implementering"><span
-class="header-section-number">1.3.60.1</span> <strong>Vad är minimum
-portföljstorlek för effektiv implementering?</strong></h4>
-<p><strong>Kostnads-nyttoanalys per portföljstorlek:</strong></p>
-<p><strong>Under €10,000:</strong> - Transaktionskostnader kan vara
-oproportionerliga till potentiell alfa - Reducerad diversifiering på
-grund av ETF-minimumköp - Månadsvis rebalansering kanske inte är
-kostnadseffektiv - Rekommendation: Börja med kvartalsvis rebalansering
-eller större startkapital</p>
-<p><strong>€10,000 - €50,000:</strong> - Adekvat storlek för alla
-strategifunktioner - Transaktionskostnader hanterbara med månadsvis
-rebalansering - Fullt ETF-universum tillgängligt för diversifiering -
-Optimalt intervall för privata investerare</p>
-<p><strong>€50,000+:</strong> - Full strategioptimering tillgänglig -
-Veckovis rebalansering blir kostnadseffektiv - Avancerade funktioner som
-volatilitetsmålstyrning mest fördelaktiga - Flera strategiprofiler eller
-anpassning möjlig</p>
-<hr />
-<p><a name="slutsatser"></a> ## 📋 <strong>SLUTSATSER</strong></p>
-<p>Adaptiv Regim &amp; Momentum representerar ett sofistikerat men
-tillgängligt tillvägagångssätt för modern portföljförvaltning som
-framgångsrikt kombinerar akademisk forskning med praktisk implementering
-för dagens investerare.</p>
-<h3 data-number="1.3.61" id="strategins-kärnvärden"><span
-class="header-section-number">1.3.61</span> <strong>16.1 Strategins
-kärnvärden</strong></h3>
-<h4 data-number="1.3.61.1" id="beprövad-vetenskaplig-grund"><span
-class="header-section-number">1.3.61.1</span> <strong>Beprövad
-vetenskaplig grund:</strong></h4>
-<p>Strategin vilar på decennier av finansforskning som konsekvent visar
-att: - Momentumeffekter finns över tidsperioder och tillgångsklasser -
-Regimmedveten allokering överträffar statiska tillvägagångssätt -
-Volatilitetsmålstyrning förbättrar riskjusterad avkastning -
-Tillgångsövergripande diversifiering reducerar korrelationsrisk under
-stress</p>
-<h4 data-number="1.3.61.2" id="teoretisk-effektivitet"><span
-class="header-section-number">1.3.61.2</span> <strong>Teoretisk
-effektivitet:</strong></h4>
-<p>Akademiska studier av liknande strategier indikerar potential för: -
-2-5% årlig överavkastning över passiva alternativ baserat på
-forskningsstudier - 30-40% reducerade maximala nedgångar under
-stresscenarion enligt Antonacci (2014) - Förbättrade risk-justerade mått
-enligt Barroso &amp; Santa-Clara (2015)</p>
-<blockquote>
-<p><strong>⚠️ VIKTIGT:</strong> Dessa är teoretiska förväntningar
-baserade på akademisk forskning. Faktisk prestanda för denna
-implementering kommer att valideras när backtesting implementeras i
-version 2.0. <strong>Nuvarande version (1.0) ger endast
-strategirekommendationer för manuell implementering.</strong></p>
-</blockquote>
-<h3 data-number="1.3.62" id="implementeringsrekommendationer"><span
-class="header-section-number">1.3.62</span> <strong>16.2
-Implementeringsrekommendationer</strong></h3>
-<h4 data-number="1.3.62.1"
-id="för-framgångsrik-strategianvändning"><span
-class="header-section-number">1.3.62.1</span> <strong>För framgångsrik
-strategianvändning:</strong></h4>
-<p><strong>Börja konservativt med manuell implementering:</strong> -
-Aktivera regimdetektion för automatisk parameteranpassning - Använd
-standard inställningar (top 3, lika viktning) initialt - Aktivera
-volatilitetsmålstyrning med 10% målvolatilitet - Kör strategin månadsvis
-för optimal kostnads-nyttokvot - Följ strategirekommendationerna
-manuellt hos din mäklare</p>
-<p><strong>Praktiska rekommendationer för version 1.0:</strong> -
-<strong>Frekvens:</strong> Kontrollera appen månadsvis eller vid stora
-marknadsrörelser - <strong>Regimskiften:</strong> Uppdatera portföljen
-inom en vecka efter regimändring - <strong>Dokumentation:</strong> Spara
-skärmdumpar av rekommendationer för trackbarhet - <strong>Gradvis
-implementering:</strong> Börja med mindre belopp för att lära dig
-systemet</p>
-<h3 data-number="1.3.63" id="slutord"><span
-class="header-section-number">1.3.63</span> <strong>16.3
-Slutord</strong></h3>
-<p>Adaptiv Regim &amp; Momentum erbjuder en unik kombination av: -
-Akademisk stringens med praktisk tillämpbarhet - Systematisk disciplin
-med adaptiv intelligens<br />
-- Transparens med sofistikerad riskhantering - Tillgänglighet med
-professionella kapaciteter</p>
-<p>För investerare som söker något bortom traditionell passiv indexering
-men utan komplexiteten eller kostnaderna av traditionell aktiv
-förvaltning, erbjuder strategin en övertygande medelväg som levererar
-förbättrad riskjusterad avkastning genom transparent, regelbaserat
-tillvägagångssätt.</p>
-<p>Framgång med Adaptiv Regim &amp; Momentum handlar i slutändan inte om
-perfekt marknadstiming eller maximal avkastning under någon enskild
-period, utan om konsekvent tillämpning av beprövade principer över tid
-för att uppnå överlägsna riskjusterade resultat genom disciplinerat,
-systematiskt tillvägagångssätt för modern portföljförvaltning.</p>
-<blockquote>
-<p><strong>📱 Version 1.0 Status:</strong> Denna version ger dig de
-verktyg som behövs för att implementera strategin manuellt med full
-transparens och kontroll. Automatisering och backtesting kommer i
-framtida versioner för att validera och förenkla processen
-ytterligare.</p>
-</blockquote>
-<hr />
-<p><a name="utvecklingsroadmap"></a> ## 🚀
-<strong>UTVECKLINGSROADMAP</strong></p>
-<p>Forskningsbaserade utvecklingsområden för att förbättra strategins
-prestanda och robusthet över tid. Roadmappen följer ett systematiskt
-tillvägagångssätt från grundläggande förbättringar till avancerade
-funktioner.</p>
-<h3 data-number="1.3.64"
-id="version-2.0---automatisering-och-backtesting"><span
-class="header-section-number">1.3.64</span> <strong>17.1 Version 2.0 -
-Automatisering och Backtesting</strong></h3>
-<h4 data-number="1.3.64.1"
-id="backtesting-och-historisk-validering"><span
-class="header-section-number">1.3.64.1</span> <strong>Backtesting och
-historisk validering</strong></h4>
-<p>Implementera komplett backtesting-system för att validera strategins
-prestanda: - Historisk prestandaanalys över 10+ år - Sharpe-kvot,
-maximala nedgångar, och andra riskmått - Jämförelse med benchmark-index
-- Månadsvis och årsvis prestationsstatistik</p>
-<h4 data-number="1.3.64.2"
-id="automatisk-rebalansering-implementerat"><span
-class="header-section-number">1.3.64.2</span> <strong>✅ Automatisk
-rebalansering (IMPLEMENTERAT)</strong></h4>
-<p>Tidsstyrd automatisk ombalansering nu fullt funktionell: - ✅
-Konfigurerbar rebalanseringsfrekvens (veckovis/månadsvis) - ✅ Flexibel
-schemaläggning med valfri veckodag - ✅ Smart idempotens-skydd:
-förhindrar onödiga automatiska körningar, tillåter manuell användning -
-✅ Transparent status och övervakning - ✅ Automatisk körning baserat på
-timer - 🔄 Push-notifikationer (planerat för v1.2) - 🔄 Mäklar-API
-integrering (planerat för v4.0+)</p>
-<h4 data-number="1.3.64.3" id="dubbelt-momentum-double-momentum"><span
-class="header-section-number">1.3.64.3</span> <strong>Dubbelt Momentum
-(Double Momentum)</strong></h4>
-<p>Kombinera nuvarande tvärsnittsmomentum med tidsseriemomentum: -
-Absolut momentum mot riskfri ränta - Endast full investering när både
-relativ och absolut momentum är positiva - Förbättrat downside
-protection enligt Antonacci-metodologi</p>
-<h3 data-number="1.3.65" id="medellånga-förbättringar-version-3.0"><span
-class="header-section-number">1.3.65</span> <strong>17.2 Medellånga
-förbättringar (Version 3.0)</strong></h3>
-<h4 data-number="1.3.65.1" id="multi-factor-rangordningssystem"><span
-class="header-section-number">1.3.65.1</span> <strong>Multi-Factor
-rangordningssystem</strong></h4>
-<p>Kombinera momentum med ytterligare kvantitativa faktorer för
-robustare ETF-urval: - Kvalitetsfaktorer: Profitabilitet, ROE,
-skuldsättning - Värdefaktorer: P/E, P/B relativa nivåer<br />
-- Låg volatilitet: Historisk volatilitetsranking - Användardefinierad
-viktning mellan faktorer</p>
-<h4 data-number="1.3.65.2" id="förbättrad-regimdetektion"><span
-class="header-section-number">1.3.65.2</span> <strong>Förbättrad
-Regimdetektion</strong></h4>
-<p>Implementera sofistikerat system med: - VIX-nivåanalys för
-marknadssentiment - Termspread för ekonomisk regimidentifiering -
-GARCH-volatilitetsmodeller för prediktiv analys - Automatisk
-parameteromställning per detekterat regim</p>
-<h4 data-number="1.3.65.3" id="risk-parity-hybrid-integrering"><span
-class="header-section-number">1.3.65.3</span> <strong>Risk Parity
-Hybrid-integrering</strong></h4>
-<p>Kombinera risk parity-allokering med momentum: - Risk
-parity-basallokering för optimal diversifiering - Momentum-justering av
-vikter för tilted exposure - Balanserad metod mellan riskspridning och
-trendfångst</p>
-<h3 data-number="1.3.66"
-id="långsiktiga-förbättringar-version-4.0"><span
-class="header-section-number">1.3.66</span> <strong>17.3 Långsiktiga
-förbättringar (Version 4.0+)</strong></h3>
-<h4 data-number="1.3.66.1" id="transaktionskostnadsanalys-tca"><span
-class="header-section-number">1.3.66.1</span>
-<strong>Transaktionskostnadsanalys (TCA)</strong></h4>
-<p>Implementera realistisk kostnadsmodellering: - Courtage-beräkning
-baserat på faktiska mäklarpriser - Bid-ask spread-estimering med
-likviditetsmodeller - Market impact-modellering för större order -
-Optimal rebalanseringsfrekvens-algoritm</p>
-<h4 data-number="1.3.66.2" id="avancerade-risk-management-verktyg"><span
-class="header-section-number">1.3.66.2</span> <strong>Avancerade Risk
-Management-verktyg</strong></h4>
-<ul>
-<li>Stop-loss-mekanismer: 7% trailing stop, 10% absolut stop</li>
-<li>Profit-taking-regler: 15% uppsida för vinsttagning</li>
-<li>Automatiska säkerhetsspärrar baserat på forskningsresultat</li>
-</ul>
-<h4 data-number="1.3.66.3" id="machine-learning-integrering"><span
-class="header-section-number">1.3.66.3</span> <strong>Machine
-Learning-integrering</strong></h4>
-<ul>
-<li>Random Forest/Logistic Regression för trendklassificering</li>
-<li>Adaptiva gränser för volatilitetstöskelvärden</li>
-<li>Datadriven optimering av strategiparametrar</li>
-<li>AI-förbättrad regimanalys</li>
-</ul>
-<h4 data-number="1.3.66.4"
-id="cross-asset-och-multi-asset-expansion"><span
-class="header-section-number">1.3.66.4</span> <strong>Cross-Asset och
-Multi-Asset-expansion</strong></h4>
-<ul>
-<li>Alternativa tillgångar: REITs, råvaror, kredit</li>
-<li>Cross-asset momentum mellan tillgångsklasser</li>
-<li>Globala marknader bortom utvecklade länder</li>
-<li>Multi-valuta portföljhantering</li>
-</ul>
-<h3 data-number="1.3.67" id="implementeringstidplan"><span
-class="header-section-number">1.3.67</span> <strong>17.4
-Implementeringstidplan</strong></h3>
-<h4 data-number="1.3.67.1" id="version-1.0-nuvarande-status"><span
-class="header-section-number">1.3.67.1</span> <strong>Version 1.0
-(NUVARANDE STATUS):</strong></h4>
-<p>✅ <strong>Implementerat:</strong> - Regimdetektion
-(Bull/Bear/Turbulent) - Adaptiv momentum (3M/1M växling) - Adaptiv
-trendfilter (MA100/MA200) - Volatilitetsmålstyrning - Manuell
-strategiexekvering - Komplett datahämtning via Marketstack</p>
-<h4 data-number="1.3.67.2" id="version-1.1-slutfört"><span
-class="header-section-number">1.3.67.2</span> <strong>Version 1.1
-(SLUTFÖRT):</strong></h4>
-<p>✅ <strong>Implementerat:</strong> - Automatisk rebalansering med
-schemaläggning - Flexibel frekvens (veckovis/månatlig) - Konfigurerbar
-veckodag för rebalansering - Smart idempotens-skydd: skyddar automatisk
-rebalansering, tillåter manuell körning - Transparent status och
-övervakning - Timer-baserad automatisk körning</p>
-<h4 data-number="1.3.67.3" id="version-1.2-nästa-steg---q2-2024"><span
-class="header-section-number">1.3.67.3</span> <strong>Version 1.2 (NÄSTA
-STEG - Q2 2024):</strong></h4>
-<p>🔄 <strong>Planerat:</strong> - Push-notifikationer för regimskiften
-- E-postrapporter och summaries - iOS-kalenderintegration - Förbättrade
-varningar och alerts</p>
-<h4 data-number="1.3.67.4" id="version-2.0-3-6-månader"><span
-class="header-section-number">1.3.67.4</span> <strong>Version 2.0 (3-6
-månader):</strong></h4>
-<p>🔄 <strong>Planerat:</strong> - Backtesting och historisk validering
-- Dubbelt momentum (tidsserie + relativ) - Komplett
-prestandarapportering - Benchmark-jämförelser</p>
-<h4 data-number="1.3.67.5" id="version-3.0-6-12-månader"><span
-class="header-section-number">1.3.67.5</span> <strong>Version 3.0 (6-12
-månader):</strong></h4>
-<p>📋 <strong>Framtida:</strong> - Multi-factor rangordning - Förbättrad
-regimdetektion - Risk parity hybrid - Transaktionskostnadsanalys</p>
-<h4 data-number="1.3.67.6" id="version-4.0-12-månader"><span
-class="header-section-number">1.3.67.6</span> <strong>Version 4.0+ (12+
-månader):</strong></h4>
-<p>🔮 <strong>Långsiktig vision:</strong> - Machine learning-funktioner
-- Cross-asset expansion - Avancerade analysverktyg - Mäklar-API
-integrering</p>
-<p>Varje utvecklingssteg bygger på beprövade finansiella teorier och
-empirisk forskning för att säkerställa att förbättringar är både
-vetenskapligt grundade och praktiskt användbara.</p>
-<p>════════════════════════════════════════════════════════════</p>
-<p><strong>SLUTDOKUMENT - ADAPTIV REGIM &amp; MOMENTUM</strong></p>
-<p><em>Komplett strategiguide för intelligent
-portföljförvaltning</em></p>
-<p><em>Utvecklad av Anders Westin © 2025</em></p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <img src="BlueScore-iOS.png" alt="BlueScore App Icon">
+                    BlueScore
+                </a>
+                <a href="https://apps.apple.com/app/bluescore/id6744608825" class="download-btn" target="_blank" rel="noopener noreferrer">Download Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Weather-Ranked Travel Destinations</h1>
+            <p>Stop guessing the weather. BlueScore finds and ranks destinations based on your perfect weather preferences – earning up to 100 points for the ideal match.</p>
+            
+            <div class="hero-image">
+                <div class="hero-mockup">
+                    <img src="iphone-mockup-of-a-man-listening-to-a-podcast-with-his-iphone-xs-max-24814.png" alt="BlueScore app running on iPhone showing weather-ranked travel destinations">
+                </div>
+            </div>
+            
+            <a href="#download" class="download-btn">Find Your Perfect Weather</a>
+        </div>
+    </section>
+
+    <!-- App Icon Section -->
+    <section class="app-icon-section">
+        <div class="container">
+            <div class="app-icon-container">
+                <img src="BlueScore-iOS.png" alt="BlueScore App Icon" class="app-icon-large">
+                <div class="app-info">
+                    <h3>BlueScore for iOS</h3>
+                    <p>The intelligent way to discover your perfect travel destination based on weather preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages-section">
+        <div class="container">
+            <div class="languages-container">
+                <h3>Available in 8 Languages</h3>
+                <div class="languages-grid">
+                    <div class="language-item fade-in-up">
+                        <span class="language-flag">🇩🇰</span>
+                        <span>Dansk</span>
+                    </div>
+                    <div class="language-item fade-in-up">
+                        <span class="language-flag">🇩🇪</span>
+                        <span>Deutsch</span>
+                    </div>
+                    <div class="language-item fade-in-up">
+                        <span class="language-flag">🇺🇸</span>
+                        <span>English</span>
+                    </div>
+                    <div class="language-item fade-in-up">
+                        <span class="language-flag">🇪🇸</span>
+                        <span>Español</span>
+                    </div>
+                    <div class="language-item fade-in-up">
+                        <span class="language-flag">🇫🇷</span>
+                        <span>Français</span>
+                    </div>
+                    <div class="language-item fade-in-up">
+                        <span class="language-flag">🇮🇹</span>
+                        <span>Italiano</span>
+                    </div>
+                    <div class="language-item fade-in-up">
+                        <span class="language-flag">🇳🇴</span>
+                        <span>Norsk</span>
+                    </div>
+                    <div class="language-item fade-in-up">
+                        <span class="language-flag">🇸🇪</span>
+                        <span>Svenska</span>
+                    </div>
+                </div>
+                <p style="color: var(--medium-gray); font-style: italic;">BlueScore speaks your language, wherever you travel</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why BlueScore Changes Everything</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Weather Scores Up to 100 Points</h3>
+                    <p>Every destination receives a precise score based on how well the forecast matches your detailed weather preferences: temperature, cloudiness, precipitation, wind speed, UV index, and humidity.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Make Decisions in Under a Minute</h3>
+                    <p>Browse the top-ranked list and book directly. No more 27 browser tabs or endless Googling.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">🌤️</div>
+                    <h3>Smart Weather Filters</h3>
+                    <p>Maximum 2 m/s wind for golf? Low UV index for sensitive skin? Set detailed weather preferences including temperature, precipitation, cloudiness, and more for four different times of day.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">📱</div>
+                    <h3>Everything in One Place</h3>
+                    <p>Public holidays, sunrise times, airports, beaches, and golf courses – all the information you need, seamlessly integrated.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Curated Destinations</h3>
+                    <p>Hand-picked places across Europe & Asia – cultural cities, island paradises, vibrant metropolises, plus your own favorite locations.</p>
+                </div>
+                
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Free to Start, Pro to Excel</h3>
+                    <p>Begin for free – upgrade to PRO for advanced filters and extended forecasts when you're ready to take your planning to the next level.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step fade-in-up">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Travel Dates</h3>
+                    <p>Select your travel dates within the next 10 days</p>
+                </div>
+                
+                <div class="step fade-in-up">
+                    <div class="step-number">2</div>
+                    <h3>Set Your Dream Weather</h3>
+                    <p>Define your ideal weather conditions for morning, lunch, evening, and midnight</p>
+                </div>
+                
+                <div class="step fade-in-up">
+                    <div class="step-number">3</div>
+                    <h3>Select Your Target Countries</h3>
+                    <p>Choose which countries you're considering for your trip</p>
+                </div>
+                
+                <div class="step fade-in-up">
+                    <div class="step-number">4</div>
+                    <h3>Apply Intelligent Filters</h3>
+                    <p>Narrow down results by setting maximum driving time to airports, beaches, or golf courses</p>
+                </div>
+                
+                <div class="step fade-in-up">
+                    <div class="step-number">5</div>
+                    <h3>Get Instant Weather Rankings</h3>
+                    <p>BlueScore ranks all destinations by how well they match your weather preferences</p>
+                </div>
+                
+                <div class="step fade-in-up">
+                    <div class="step-number">6</div>
+                    <h3>Book with Complete Confidence</h3>
+                    <p>Armed with BlueScore's weather insights, confidently book your perfect destination through your preferred travel platform</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="target-audience">
+        <div class="container">
+            <h2>Perfect For</h2>
+            <div class="audience-grid">
+                <div class="audience-card fade-in-up">
+                    <h3>🌹 Romantic Weekends</h3>
+                    <p>Warm evenings, clear skies – no umbrellas needed</p>
+                </div>
+                
+                <div class="audience-card fade-in-up">
+                    <h3>⛳ Golf Enthusiasts</h3>
+                    <p>Calm fairways, dry scorecards, perfect playing conditions</p>
+                </div>
+                
+                <div class="audience-card fade-in-up">
+                    <h3>💻 Digital Nomads</h3>
+                    <p>Find perfect beach weather in real-time and work from paradise</p>
+                </div>
+                
+                <div class="audience-card fade-in-up">
+                    <h3>👨‍👩‍👧‍👦 Families</h3>
+                    <p>Just-right temperatures and zero rain equals happy kids</p>
+                </div>
+                
+                <div class="audience-card fade-in-up">
+                    <h3>🎒 Backpackers</h3>
+                    <p>Skip the storms and island-hop with sunshine as your compass</p>
+                </div>
+                
+                <div class="audience-card fade-in-up">
+                    <h3>🌅 Weekend Escapees</h3>
+                    <p>Swap clouds for clarity – choose sunshine, spontaneity, and dinner under starlit skies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="features" style="background: var(--light-gray);">
+        <div class="container">
+            <h2>See BlueScore in Action</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item fade-in-up">
+                    <img src="0d_Simulator Screenshot.png" alt="BlueScore welcome screen and onboarding">
+                </div>
+                <div class="screenshot-item fade-in-up">
+                    <img src="1c_Simulator Screenshot.png" alt="Travel dates and destination selection">
+                </div>
+                <div class="screenshot-item fade-in-up">
+                    <img src="2c_Simulator Screenshot.png" alt="Weather preferences configuration">
+                </div>
+                <div class="screenshot-item fade-in-up">
+                    <img src="3c_Simulator Screenshot.png" alt="Country and filter selection">
+                </div>
+                <div class="screenshot-item fade-in-up">
+                    <img src="4h_Simulator Screenshot.png" alt="Search results with weather scores">
+                </div>
+                <div class="screenshot-item fade-in-up">
+                    <img src="5c_Simulator Screenshot.png" alt="Detailed destination view with forecast">
+                </div>
+                <div class="screenshot-item fade-in-up">
+                    <img src="6h_Simulator Screenshot.png" alt="Destination details and amenities">
+                </div>
+                <div class="screenshot-item fade-in-up">
+                    <img src="7c_Simulator Screenshot.png" alt="Weather data and location information">
+                </div>
+                <div class="screenshot-item fade-in-up">
+                    <img src="8c_Simulator Screenshot.png" alt="Pro features and premium options">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="download">
+        <div class="container">
+            <h2>Travel on Weather's Terms, Not by Chance</h2>
+            <p>Download BlueScore now and discover the destination that scores full points – before your flight takes off!</p>
+            
+            <div class="cta-buttons">
+                <a href="https://apps.apple.com/app/bluescore/id6744608825" class="app-store-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="app-store-badge.svg" alt="Download on the App Store" style="height: 60px; width: auto;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Anders Westin</p>
+            <p>Email: hello@bluescore.cloud</p>
+            <p>All rights reserved.</p>
+            <p>
+                <a href="https://www.bluescore.cloud/privacypolicy/">Privacy Policy</a> • 
+                <a href="https://www.bluescore.cloud/terms/">Terms of Use</a> • 
+                <a href="https://www.bluescore.cloud/support/">Support</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in-up elements
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
-</html>
+</html> 
