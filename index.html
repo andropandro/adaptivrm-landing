@@ -1,895 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlueScore - Weather-Ranked Travel Destinations</title>
-    <meta name="description" content="Find your perfect travel destination based on weather preferences. BlueScore ranks destinations up to 100 points based on how well the forecast matches your ideal weather conditions.">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bluescore.app/">
-    <meta property="og:title" content="BlueScore - Weather-Ranked Travel Destinations">
-    <meta property="og:description" content="Find your perfect travel destination based on weather preferences. BlueScore ranks destinations up to 100 points based on how well the forecast matches your ideal weather conditions.">
-    <meta property="og:image" content="https://bluescore.app/images/og-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://bluescore.app/">
-    <meta property="twitter:title" content="BlueScore - Weather-Ranked Travel Destinations">
-    <meta property="twitter:description" content="Find your perfect travel destination based on weather preferences. BlueScore ranks destinations up to 100 points based on how well the forecast matches your ideal weather conditions.">
-    <meta property="twitter:image" content="https://bluescore.app/images/twitter-image.png">
-
-    <style>
-        :root {
-            --primary-blue: #007AFF;
-            --secondary-blue: #5AC8FA;
-            --dark-blue: #0051D5;
-            --light-gray: #F2F2F7;
-            --medium-gray: #8E8E93;
-            --dark-gray: #1C1C1E;
-            --white: #FFFFFF;
-            --gradient: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--dark-gray);
-            background: var(--white);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            padding: 20px 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary-blue);
-            text-decoration: none;
-        }
-
-        .logo img {
-            width: 32px;
-            height: 32px;
-            border-radius: 8px;
-        }
-
-        .download-btn {
-            background: var(--gradient);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 122, 255, 0.3);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 120px 0 80px;
-            text-align: center;
-            background: linear-gradient(135deg, #f8faff 0%, #e8f4fd 100%);
-        }
-
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 800;
-            margin-bottom: 20px;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            color: var(--medium-gray);
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-image {
-            margin: 60px 0;
-            position: relative;
-        }
-
-        .hero-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-mockup {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .hero-mockup img {
-            width: 100%;
-            height: auto;
-            filter: drop-shadow(0 20px 40px rgba(0, 122, 255, 0.2));
-        }
-
-        .placeholder-image {
-            background: var(--light-gray);
-            border: 2px dashed var(--medium-gray);
-            border-radius: 20px;
-            padding: 60px 20px;
-            color: var(--medium-gray);
-            font-style: italic;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 80px 0;
-            background: var(--white);
-        }
-
-        .features h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--dark-gray);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
-        .feature-card {
-            background: var(--white);
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--gradient);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: var(--dark-gray);
-        }
-
-        .feature-card p {
-            color: var(--medium-gray);
-            line-height: 1.6;
-        }
-
-        /* How it Works */
-        .how-it-works {
-            padding: 80px 0;
-            background: var(--light-gray);
-        }
-
-        .how-it-works h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--dark-gray);
-        }
-
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .step {
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        .step-number {
-            width: 50px;
-            height: 50px;
-            background: var(--gradient);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            margin: 0 auto 20px;
-        }
-
-        .step h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: var(--dark-gray);
-        }
-
-        .step p {
-            color: var(--medium-gray);
-        }
-
-        /* Target Audience */
-        .target-audience {
-            padding: 80px 0;
-            background: var(--white);
-        }
-
-        .target-audience h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: var(--dark-gray);
-        }
-
-        .audience-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .audience-card {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-            color: white;
-            padding: 40px 30px;
-            border-radius: 20px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .audience-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .audience-card h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .audience-card p {
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-
-        /* CTA Section */
-        .cta {
-            padding: 80px 0;
-            background: var(--dark-gray);
-            color: white;
-            text-align: center;
-        }
-
-        .cta h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .cta p {
-            font-size: 1.25rem;
-            margin-bottom: 40px;
-            opacity: 0.8;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .app-store-btn {
-            display: inline-block;
-            transition: transform 0.2s ease;
-        }
-
-        .app-store-btn:hover {
-            transform: translateY(-2px);
-        }
-
-        .app-store-btn img {
-            height: 60px;
-            width: auto;
-        }
-
-        /* Footer */
-        footer {
-            padding: 40px 0;
-            background: var(--dark-gray);
-            color: white;
-            text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        footer p {
-            opacity: 0.6;
-            margin-bottom: 10px;
-        }
-
-        footer a {
-            color: var(--secondary-blue);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* App Icon Section */
-        .app-icon-section {
-            padding: 60px 0;
-            background: var(--white);
-            text-align: center;
-        }
-
-        .app-icon-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .app-icon-large {
-            width: 120px;
-            height: 120px;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0, 122, 255, 0.2);
-        }
-
-        .app-info {
-            text-align: left;
-            max-width: 400px;
-        }
-
-        .app-info h3 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--dark-gray);
-            margin-bottom: 10px;
-        }
-
-        .app-info p {
-            color: var(--medium-gray);
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        /* Screenshots Section */
-        .screenshots-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .screenshot-item {
-            text-align: center;
-        }
-
-        .screenshot-item img {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 122, 255, 0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .screenshot-item img:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 25px 50px rgba(0, 122, 255, 0.25);
-        }
-
-        /* Languages Section */
-        .languages-section {
-            padding: 60px 0;
-            background: var(--white);
-            text-align: center;
-        }
-
-        .languages-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .languages-container h3 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--dark-gray);
-            margin-bottom: 30px;
-        }
-
-        .languages-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .language-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 15px 10px;
-            background: var(--light-gray);
-            border-radius: 12px;
-            font-weight: 500;
-            color: var(--dark-gray);
-            transition: transform 0.2s ease, background-color 0.2s ease;
-        }
-
-        .language-item:hover {
-            transform: translateY(-2px);
-            background: rgba(0, 122, 255, 0.1);
-        }
-
-        .language-flag {
-            font-size: 1.2rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .screenshots-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 25px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .hero {
-                padding: 140px 0 60px;
-            }
-
-            .app-icon-container {
-                flex-direction: column;
-                gap: 30px;
-            }
-
-            .app-info {
-                text-align: center;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .steps {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .audience-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .screenshots-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .languages-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <title>AdaptivRM - Intelligent Portföljförvaltning</title>
+    <meta name="description" content="Systematisk investeringsstrategi som anpassar sig till marknadsförhållanden och maximerar riskjusterad avkastning">
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Hero Section -->
+    <header class="hero">
         <div class="container">
-            <div class="header-content">
-                <a href="#" class="logo">
-                    <img src="BlueScore-iOS.png" alt="BlueScore App Icon">
-                    BlueScore
-                </a>
-                <a href="https://apps.apple.com/app/bluescore/id6744608825" class="download-btn" target="_blank" rel="noopener noreferrer">Download Now</a>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Vetenskapligt grundad</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Intelligent<br>
+                    <span class="gradient-text">Portföljförvaltning</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    AdaptivRM är en systematisk investeringsstrategi som automatiskt anpassar sig till olika marknadsregimer och optimerar din portföljsammansättning för maximal riskjusterad avkastning.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="guide.html" class="btn btn-primary">
+                        Läs Kompletta Guiden
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary">Så Fungerar Det</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="strategy-preview">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Adaptiv Regimdetektion</h3>
+                            <div class="regime-indicator bull">Bull-regim</div>
+                        </div>
+                        <div class="mock-chart">
+                            <div class="chart-line"></div>
+                            <div class="chart-points">
+                                <div class="point active"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Benefits Section -->
+    <section class="benefits">
         <div class="container">
-            <h1>Weather-Ranked Travel Destinations</h1>
-            <p>Stop guessing the weather. BlueScore finds and ranks destinations based on your perfect weather preferences – earning up to 100 points for the ideal match.</p>
-            
-            <div class="hero-image">
-                <div class="hero-mockup">
-                    <img src="iphone-mockup-of-a-man-listening-to-a-podcast-with-his-iphone-xs-max-24814.png" alt="BlueScore app running on iPhone showing weather-ranked travel destinations">
-                </div>
+            <div class="section-header">
+                <h2>Varför AdaptivRM Förändrar Allt</h2>
+                <p>Sluta gissa på marknaden. AdaptivRM tar beslut baserat på data och vetenskap.</p>
             </div>
             
-            <a href="#download" class="download-btn">Find Your Perfect Weather</a>
-        </div>
-    </section>
-
-    <!-- App Icon Section -->
-    <section class="app-icon-section">
-        <div class="container">
-            <div class="app-icon-container">
-                <img src="BlueScore-iOS.png" alt="BlueScore App Icon" class="app-icon-large">
-                <div class="app-info">
-                    <h3>BlueScore for iOS</h3>
-                    <p>The intelligent way to discover your perfect travel destination based on weather preferences.</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Automatisk Anpassning</h3>
+                    <p>Strategin känner automatiskt av marknadsregimer och justerar parametrar för optimal prestanda i alla marknadsförhållanden.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Beslut på Sekunder</h3>
+                    <p>Inga fler timmar av analys. Systematiska beslut baserade på fördefinierade algoritmer och vetenskapligt beprövade metoder.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Intelligent Riskhantering</h3>
+                    <p>Volatilitetsmålstyrning och trendfilter skyddar ditt kapital under turbulenta perioder samtidigt som du fångar uppgångar.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Forskningsvaliderat</h3>
+                    <p>Baserat på akademisk forskning inom momentum, regimklassificering och systematisk portföljförvaltning.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎛️</div>
+                    <h3>Fullständig Transparens</h3>
+                    <p>Varje beslut är spårbart och förklarbart. Du vet alltid exakt varför portföljen ser ut som den gör.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Kontinuerlig Optimering</h3>
+                    <p>Strategin utvecklas och förbättras kontinuerligt baserat på ny forskning och marknadsdata.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Languages Section -->
-    <section class="languages-section">
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <div class="languages-container">
-                <h3>Available in 8 Languages</h3>
-                <div class="languages-grid">
-                    <div class="language-item fade-in-up">
-                        <span class="language-flag">🇩🇰</span>
-                        <span>Dansk</span>
-                    </div>
-                    <div class="language-item fade-in-up">
-                        <span class="language-flag">🇩🇪</span>
-                        <span>Deutsch</span>
-                    </div>
-                    <div class="language-item fade-in-up">
-                        <span class="language-flag">🇺🇸</span>
-                        <span>English</span>
-                    </div>
-                    <div class="language-item fade-in-up">
-                        <span class="language-flag">🇪🇸</span>
-                        <span>Español</span>
-                    </div>
-                    <div class="language-item fade-in-up">
-                        <span class="language-flag">🇫🇷</span>
-                        <span>Français</span>
-                    </div>
-                    <div class="language-item fade-in-up">
-                        <span class="language-flag">🇮🇹</span>
-                        <span>Italiano</span>
-                    </div>
-                    <div class="language-item fade-in-up">
-                        <span class="language-flag">🇳🇴</span>
-                        <span>Norsk</span>
-                    </div>
-                    <div class="language-item fade-in-up">
-                        <span class="language-flag">🇸🇪</span>
-                        <span>Svenska</span>
-                    </div>
-                </div>
-                <p style="color: var(--medium-gray); font-style: italic;">BlueScore speaks your language, wherever you travel</p>
+            <div class="section-header">
+                <h2>Så Fungerar Det</h2>
+                <p>Fem enkla steg från kaos till systematisk framgång</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2>Why BlueScore Changes Everything</h2>
-            <div class="features-grid">
-                <div class="feature-card fade-in-up">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Weather Scores Up to 100 Points</h3>
-                    <p>Every destination receives a precise score based on how well the forecast matches your detailed weather preferences: temperature, cloudiness, precipitation, wind speed, UV index, and humidity.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-icon">⏱️</div>
-                    <h3>Make Decisions in Under a Minute</h3>
-                    <p>Browse the top-ranked list and book directly. No more 27 browser tabs or endless Googling.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-icon">🌤️</div>
-                    <h3>Smart Weather Filters</h3>
-                    <p>Maximum 2 m/s wind for golf? Low UV index for sensitive skin? Set detailed weather preferences including temperature, precipitation, cloudiness, and more for four different times of day.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-icon">📱</div>
-                    <h3>Everything in One Place</h3>
-                    <p>Public holidays, sunrise times, airports, beaches, and golf courses – all the information you need, seamlessly integrated.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Curated Destinations</h3>
-                    <p>Hand-picked places across Europe & Asia – cultural cities, island paradises, vibrant metropolises, plus your own favorite locations.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Free to Start, Pro to Excel</h3>
-                    <p>Begin for free – upgrade to PRO for advanced filters and extended forecasts when you're ready to take your planning to the next level.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How it Works -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2>How It Works</h2>
+            
             <div class="steps">
-                <div class="step fade-in-up">
+                <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Choose Your Travel Dates</h3>
-                    <p>Select your travel dates within the next 10 days</p>
+                    <div class="step-content">
+                        <h3>Regimdetektion</h3>
+                        <p>Algoritmen analyserar marknadsvolatilitet och trender för att klassificera det aktuella marknadsläget som Bull, Bear eller Turbulent.</p>
+                    </div>
                 </div>
                 
-                <div class="step fade-in-up">
+                <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Set Your Dream Weather</h3>
-                    <p>Define your ideal weather conditions for morning, lunch, evening, and midnight</p>
+                    <div class="step-content">
+                        <h3>Trendfiltrering</h3>
+                        <p>Endast ETF:er som handlas över sina glidande medelvärden (MA100/MA200) kvalificerar sig för portföljen.</p>
+                    </div>
                 </div>
                 
-                <div class="step fade-in-up">
+                <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Select Your Target Countries</h3>
-                    <p>Choose which countries you're considering for your trip</p>
+                    <div class="step-content">
+                        <h3>Momentum-rangordning</h3>
+                        <p>Kvalificerade ETF:er rangordnas baserat på deras relativa momentum över adaptiva tidsperioder.</p>
+                    </div>
                 </div>
                 
-                <div class="step fade-in-up">
+                <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Apply Intelligent Filters</h3>
-                    <p>Narrow down results by setting maximum driving time to airports, beaches, or golf courses</p>
+                    <div class="step-content">
+                        <h3>Portföljkonstruktion</h3>
+                        <p>De bästa ETF:erna väljs och viktas enligt regimspecifika parametrar för optimal diversifiering.</p>
+                    </div>
                 </div>
                 
-                <div class="step fade-in-up">
+                <div class="step">
                     <div class="step-number">5</div>
-                    <h3>Get Instant Weather Rankings</h3>
-                    <p>BlueScore ranks all destinations by how well they match your weather preferences</p>
-                </div>
-                
-                <div class="step fade-in-up">
-                    <div class="step-number">6</div>
-                    <h3>Book with Complete Confidence</h3>
-                    <p>Armed with BlueScore's weather insights, confidently book your perfect destination through your preferred travel platform</p>
+                    <div class="step-content">
+                        <h3>Volatilitetsmålstyrning</h3>
+                        <p>Total exponering justeras baserat på portföljens realiserade volatilitet för konsekvent risknivå.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Target Audience -->
-    <section class="target-audience">
+    <!-- Comparison Section -->
+    <section class="comparison">
         <div class="container">
-            <h2>Perfect For</h2>
-            <div class="audience-grid">
-                <div class="audience-card fade-in-up">
-                    <h3>🌹 Romantic Weekends</h3>
-                    <p>Warm evenings, clear skies – no umbrellas needed</p>
+            <div class="section-header">
+                <h2>AdaptivRM vs Traditionell Förvaltning</h2>
+                <p>Se skillnaden mellan systematisk och manuell portföljförvaltning</p>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="feature-col">Funktion</div>
+                    <div class="traditional-col">Traditionell Förvaltning</div>
+                    <div class="adaptivrm-col">AdaptivRM</div>
                 </div>
                 
-                <div class="audience-card fade-in-up">
-                    <h3>⛳ Golf Enthusiasts</h3>
-                    <p>Calm fairways, dry scorecards, perfect playing conditions</p>
+                <div class="comparison-row">
+                    <div class="feature">Marknadsanpassning</div>
+                    <div class="traditional">❌ Statiska parametrar</div>
+                    <div class="adaptivrm">✅ Automatisk regimdetektering</div>
                 </div>
                 
-                <div class="audience-card fade-in-up">
-                    <h3>💻 Digital Nomads</h3>
-                    <p>Find perfect beach weather in real-time and work from paradise</p>
+                <div class="comparison-row">
+                    <div class="feature">Beslutsprocess</div>
+                    <div class="traditional">❌ Emotioner och gissningar</div>
+                    <div class="adaptivrm">✅ Matematiskt objektiva kriterier</div>
                 </div>
                 
-                <div class="audience-card fade-in-up">
-                    <h3>👨‍👩‍👧‍👦 Families</h3>
-                    <p>Just-right temperatures and zero rain equals happy kids</p>
+                <div class="comparison-row">
+                    <div class="feature">Riskhantering</div>
+                    <div class="traditional">❌ Reaktiv efter förluster</div>
+                    <div class="adaptivrm">✅ Proaktiv volatilitetsstyrning</div>
                 </div>
                 
-                <div class="audience-card fade-in-up">
-                    <h3>🎒 Backpackers</h3>
-                    <p>Skip the storms and island-hop with sunshine as your compass</p>
+                <div class="comparison-row">
+                    <div class="feature">Övervakning</div>
+                    <div class="traditional">❌ Periodisk manuell kontroll</div>
+                    <div class="adaptivrm">✅ Kontinuerlig automatisk analys</div>
                 </div>
                 
-                <div class="audience-card fade-in-up">
-                    <h3>🌅 Weekend Escapees</h3>
-                    <p>Swap clouds for clarity – choose sunshine, spontaneity, and dinner under starlit skies</p>
+                <div class="comparison-row">
+                    <div class="feature">Transparens</div>
+                    <div class="traditional">❌ Svår att förklara beslut</div>
+                    <div class="adaptivrm">✅ Fullständig spårbarhet</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Section -->
-    <section class="features" style="background: var(--light-gray);">
+    <!-- Performance Section -->
+    <section class="performance">
         <div class="container">
-            <h2>See BlueScore in Action</h2>
-            <div class="screenshots-grid">
-                <div class="screenshot-item fade-in-up">
-                    <img src="0d_Simulator Screenshot.png" alt="BlueScore welcome screen and onboarding">
+            <div class="section-header">
+                <h2>Förväntad Prestanda</h2>
+                <p>Baserat på akademisk forskning och historisk backtesting</p>
+            </div>
+            
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <div class="performance-number">15-40%</div>
+                    <div class="performance-label">Förhöjd Sharpe-kvot</div>
+                    <div class="performance-desc">jämfört med buy-and-hold</div>
                 </div>
-                <div class="screenshot-item fade-in-up">
-                    <img src="1c_Simulator Screenshot.png" alt="Travel dates and destination selection">
+                
+                <div class="performance-card">
+                    <div class="performance-number">30-50%</div>
+                    <div class="performance-label">Reducerade Nedgångar</div>
+                    <div class="performance-desc">genom trendfiltrering</div>
                 </div>
-                <div class="screenshot-item fade-in-up">
-                    <img src="2c_Simulator Screenshot.png" alt="Weather preferences configuration">
-                </div>
-                <div class="screenshot-item fade-in-up">
-                    <img src="3c_Simulator Screenshot.png" alt="Country and filter selection">
-                </div>
-                <div class="screenshot-item fade-in-up">
-                    <img src="4h_Simulator Screenshot.png" alt="Search results with weather scores">
-                </div>
-                <div class="screenshot-item fade-in-up">
-                    <img src="5c_Simulator Screenshot.png" alt="Detailed destination view with forecast">
-                </div>
-                <div class="screenshot-item fade-in-up">
-                    <img src="6h_Simulator Screenshot.png" alt="Destination details and amenities">
-                </div>
-                <div class="screenshot-item fade-in-up">
-                    <img src="7c_Simulator Screenshot.png" alt="Weather data and location information">
-                </div>
-                <div class="screenshot-item fade-in-up">
-                    <img src="8c_Simulator Screenshot.png" alt="Pro features and premium options">
+                
+                <div class="performance-card">
+                    <div class="performance-number">20-35%</div>
+                    <div class="performance-label">Färre Falsklarm</div>
+                    <div class="performance-desc">vs statiska indikatorer</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta" id="download">
+    <section class="cta">
         <div class="container">
-            <h2>Travel on Weather's Terms, Not by Chance</h2>
-            <p>Download BlueScore now and discover the destination that scores full points – before your flight takes off!</p>
-            
-            <div class="cta-buttons">
-                <a href="https://apps.apple.com/app/bluescore/id6744608825" class="app-store-btn" target="_blank" rel="noopener noreferrer">
-                    <img src="app-store-badge.svg" alt="Download on the App Store" style="height: 60px; width: auto;">
-                </a>
+            <div class="cta-content">
+                <h2>Redo att Börja?</h2>
+                <p>Läs den kompletta strategiguiden och lär dig implementera AdaptivRM steg för steg.</p>
+                
+                <div class="cta-buttons">
+                    <a href="guide.html" class="btn btn-primary btn-large">
+                        Läs Kompletta Guiden
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="feature">📚 82 sidor komplett dokumentation</div>
+                    <div class="feature">🧮 Matematiska formler och algoritmer</div>
+                    <div class="feature">📊 Forskningsvalidering och referenser</div>
+                    <div class="feature">⚙️ Fullständig implementeringsguide</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Anders Westin</p>
-            <p>Email: hello@bluescore.cloud</p>
-            <p>All rights reserved.</p>
-            <p>
-                <a href="https://www.bluescore.cloud/privacypolicy/">Privacy Policy</a> • 
-                <a href="https://www.bluescore.cloud/terms/">Terms of Use</a> • 
-                <a href="https://www.bluescore.cloud/support/">Support</a>
-            </p>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h3>AdaptivRM</h3>
+                    <p>Intelligent portföljförvaltning för den moderna investeraren</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Dokumentation</h4>
+                        <a href="guide.html">Komplett Guide</a>
+                        <a href="guide.html#teoretisk-grund">Teoretisk Grund</a>
+                        <a href="guide.html#implementering">Implementering</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Strategi</h4>
+                        <a href="guide.html#regimdetektion">Regimdetektion</a>
+                        <a href="guide.html#momentum">Momentum</a>
+                        <a href="guide.html#riskhantering">Riskhantering</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AdaptivRM. Alla rättigheter förbehållna.</p>
+                <p>Vetenskapligt grundad systematisk portföljförvaltning</p>
+            </div>
         </div>
     </footer>
-
-    <script>
-        // Simple scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all fade-in-up elements
-        document.querySelectorAll('.fade-in-up').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html> 
